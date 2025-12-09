@@ -3,603 +3,1061 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Gambling Market Analysis (2026) - Comprehensive</title>
+    <title>Global Gambling Market Intelligence Report</title>
     <style>
-        /* CSS for Layout and Styling */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #1a1a2e;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 1.8em;
-        }
-
-        /* Menu/Navigation Styling */
-        nav {
-            background-color: #2a3a5e;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .tab-menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tab-menu li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            font-weight: 600;
-            font-size: 0.9em;
-        }
-
-        .tab-menu li a:hover {
-            background-color: #475980;
-        }
-
-        .tab-menu li a.active {
-            background-color: #f9b142;
-            color: #1a1a2e;
-        }
-
-        /* Content Area Styling */
-        main {
-            padding: 20px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        .content-section {
-            display: none;
-            background-color: white;
-            padding: 20px 30px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .content-section h2, .content-section h3, .content-section h4 {
-            color: #2a3a5e;
-            border-bottom: 2px solid #f9b142;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            box-sizing: border-box;
         }
         
-        .content-section h4 {
-            margin-top: 20px;
-            border-bottom: 1px solid #eee;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecf1 100%);
+            padding: 20px;
         }
-
-        .content-section p, .content-section ul {
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #003d99 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecf1;
+            overflow-x: auto;
+            gap: 0;
+        }
+        
+        .nav-tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            font-weight: 500;
+            color: #555;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .nav-tab:hover {
+            background: #f0f2f5;
+            color: #0066cc;
+        }
+        
+        .nav-tab.active {
+            color: #0066cc;
+            border-bottom-color: #0066cc;
+            background: white;
+        }
+        
+        .content-section {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        h2 {
+            color: #0066cc;
+            margin-bottom: 25px;
+            font-size: 2em;
+            border-bottom: 3px solid #e9ecf1;
+            padding-bottom: 15px;
+        }
+        
+        h3 {
+            color: #003d99;
+            margin-top: 30px;
             margin-bottom: 15px;
+            font-size: 1.4em;
         }
-
-        .content-section ul {
-            padding-left: 25px;
-            margin-top: 10px;
+        
+        h4 {
+            color: #0066cc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
-
-        .content-section ul li {
-            margin-bottom: 8px;
+        
+        .market-card {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        .content-section hr {
-            border: 0;
-            border-top: 1px solid #ddd;
-            margin: 25px 0;
+        
+        .market-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.2);
         }
-
-        /* Table Styling */
+        
+        .market-card.critical {
+            border-left-color: #d32f2f;
+            background: #fff3e0;
+        }
+        
+        .market-card.positive {
+            border-left-color: #388e3c;
+            background: #e8f5e9;
+        }
+        
+        .market-card.warning {
+            border-left-color: #f57c00;
+            background: #fff3e0;
+        }
+        
+        .market-card.neutral {
+            border-left-color: #7e57c2;
+            background: #f3e5f5;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #856404;
+        }
+        
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            font-size: 0.9em;
-            text-align: left;
-        }
-
-        table th, table td {
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-        }
-
-        table th {
-            background-color: #3f51b5;
-            color: white;
-            text-transform: uppercase;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f8f8f8;
+            font-size: 0.95em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
-        /* Custom styles for urgency/warnings */
-        .market-analysis-section strong {
-            color: #3f51b5;
+        thead {
+            background: #0066cc;
+            color: white;
+            font-weight: 600;
         }
-
-        .market-analysis-section .warning {
-            color: #e91e63;
-            font-weight: bold;
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecf1;
         }
-
-        .market-analysis-section .success {
-            color: #4CAF50;
-            font-weight: bold;
+        
+        tbody tr:hover {
+            background: #f5f7fa;
         }
-
-        .market-analysis-section .highlight {
-            background-color: #fff3cd;
-            padding: 2px 6px;
-            border-radius: 3px;
+        
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-tier1 {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-tier2 {
+            background: #cfe2ff;
+            color: #084298;
+        }
+        
+        .status-tier3 {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #0066cc 0%, #003d99 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+        
+        .box-info {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .box-warning {
+            background: #fff3e0;
+            border: 1px solid #ffb74d;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .box-success {
+            background: #e8f5e9;
+            border: 1px solid #81c784;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline-item {
+            margin: 20px 0;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #0066cc;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #0066cc;
+        }
+        
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 21px;
+            width: 2px;
+            height: 40px;
+            background: #e9ecf1;
+        }
+        
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: #0066cc;
+            font-size: 0.95em;
+        }
+        
+        .timeline-content {
+            margin-top: 5px;
+            color: #555;
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            border-top: 1px solid #e9ecf1;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .comparison-chart {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .comparison-item {
+            background: white;
+            border: 1px solid #e9ecf1;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .comparison-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .comparison-value {
+            font-size: 1.8em;
+            color: #0066cc;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .nav-tabs {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Online Gambling Market Analysis: Central America, South America & Africa (2026)</h1>
-        <p>Weekly Update - December 2, 2025 | Data Cutoff: November 27, 2025</p>
-    </header>
-
-    <nav>
-        <ul class="tab-menu">
-            <li><a href="#summary" class="tab-link active" data-target="summary-content">Executive Summary</a></li>
-            <li><a href="#ranking" class="tab-link" data-target="ranking-content">Global Ranking Table</a></li>
-            <li><a href="#south-america" class="tab-link" data-target="south-america-content">South America: Detailed Analysis</a></li>
-            <li><a href="#central-america" class="tab-link" data-target="central-america-content">Central America: Detailed Analysis</a></li>
-            <li><a href="#africa" class="tab-link" data-target="africa-content">Africa: Detailed Analysis</a></li>
-            <li><a href="#sizing" class="tab-link" data-target="sizing-content">Market Sizing & Metrics</a></li>
-            <li><a href="#roadmap" class="tab-link" data-target="roadmap-content">Entry Roadmap & Strategy</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <div class="container">
+        <header>
+            <h1>🌍 Global Gambling Market Intelligence Report</h1>
+            <p>Comprehensive Analysis: 19 Markets Across South America, Central America & Africa | Updated December 2025</p>
+        </header>
         
-        <div id="summary-content" class="content-section market-analysis-section" style="display: block;">
-            <h2>EXECUTIVE SUMMARY - WEEK OF NOV 24-27, 2025</h2>
-            
-            <h3>Key Market Changes This Week</h3>
-            
-            <h4>South Africa - Major Tax Reform Proposal</h4>
-            <ul>
-                <li>National Treasury released draft proposal: <strong>20% national tax on online gambling</strong>.</li>
-                <li>Proposed to add to existing provincial taxes (6-20%), creating total <strong>26-29% effective rate</strong>.</li>
-                <li>Signals potential legalization path for <strong>online casinos</strong> (currently banned under National Gambling Act 2004).</li>
-                <li>Market Context: Broader gambling market projected to generate <strong>EUR 3.63B by 2025</strong>, with betting accounting for <strong>60.5%</strong> of total earnings. Mobile wagering dominates at <strong>81%</strong> of online betting turnover.</li>
-                <li>Competitive Impact: Current operators (Supabets, major international brands) may face margin compression if tax passes. Regulatory separation between betting and casino platforms now strictly enforced.</li>
-            </ul>
-            
-            <h4>Nigeria - Constitutional Crisis Escalating</h4>
-            <ul>
-                <li>Supreme Court ruled gaming is state-exclusive competency (Nov 22, 2024).</li>
-                <li>National Assembly now considering "Central Gaming Bill 2025" - directly contradicts court ruling.</li>
-                <li>Constitutional Context: Federal excise duty (<strong>5%</strong>) introduced Jan 2025; federal withholding tax (<strong>5%</strong>) on player wins now effective.</li>
-                <li>Competitive Context: BetKing saw a <strong>76% YoY revenue surge to $106M (FY25)</strong>. Bet9ja holds approximately <strong>6% market share</strong>, and SportyBet is the <strong>4th most-visited website nationally</strong> (July 2025).</li>
-                <li>Status: High regulatory uncertainty; expect <strong>6-12 month delay in clarity</strong>.</li>
-            </ul>
-            
-            <h4>Brazil - Market Stabilization Underway</h4>
-            <ul>
-                <li>Tax Collection Milestone: <strong>BRL 3.026 billion collected in taxes between January and May 2025</strong> (23,000% increase YoY).</li>
-                <li>Revenue Performance: Estimated <strong>BRL 25.2 billion gross revenue in first five months of 2025</strong>, far exceeding pre-regulation projections of BRL 8-20 billion annually.</li>
-                <li>Market Structure: <strong>14 definitive licenses</strong> (full authorization) + <strong>52 provisional licenses</strong> as of Dec 2025.</li>
-                <li>Operator Count: <strong>65 operators running 171 brands</strong> (August 2025 data).</li>
-                <li>Ordinance Implementation: Ordinance No. 827 closed regulatory loopholes as of January 2025; multi-brand operation permitted (up to 3 brands per license).</li>
-                <li>Marketing Requirement: Celebrity partnerships and creative promotions essential. <strong>95% mobile adoption</strong> projected by 2030.</li>
-                <li>Advertising Changes: Senate approved Bill No. 2,985/2023, establishing new rules prohibiting use of artists, athletes, influencers, and public figures in betting advertisements (effective 2025).</li>
-            </ul>
-
-            <h4>Peru - Market Growth Accelerating</h4>
-            <ul>
-                <li>Market Scale: Total gambling market estimated at <strong>USD 2.51 billion (2024)</strong>, with online gambling contributing approximately <strong>USD 1.2 billion</strong>.</li>
-                <li>2025-2026 Projection: Online gambling sector could generate <strong>USD 145 million in revenue for 2025</strong>, with total market growth to <strong>USD 3 billion by 2026</strong>.</li>
-                <li>Digital Penetration: Internet penetration at <strong>75% (early 2024)</strong> with mobile connections exceeding total population. Mobile payments account for <strong>59% of all e-commerce transactions</strong>.</li>
-                <li>Regulatory Momentum: <strong>59 operators</strong> received authorization during first year of Law No. 31557 regime (February 2024 onwards).</li>
-            </ul>
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="switchTab('executive')">Executive Summary</button>
+            <button class="nav-tab" onclick="switchTab('southamerica')">South America</button>
+            <button class="nav-tab" onclick="switchTab('centralamerica')">Central America</button>
+            <button class="nav-tab" onclick="switchTab('africa')">Africa</button>
+            <button class="nav-tab" onclick="switchTab('projections')">Market Projections</button>
+            <button class="nav-tab" onclick="switchTab('timeline')">Entry Timeline</button>
         </div>
-
-        <div id="ranking-content" class="content-section market-analysis-section">
-            <h2>GLOBAL RANKING TABLE (2026 - All 19 Markets)</h2>
+        
+        <!-- EXECUTIVE SUMMARY SECTION -->
+        <div id="executive" class="content-section active">
+            <h2>Executive Summary - Week of December 2-9, 2025</h2>
             
-            <p><strong>Note:</strong> Scores are based on Ease, Cost, Competition, and Potential (average of 4 factors).</p>
-
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Total Market Size (2025)</div>
+                    <div class="stat-number">USD 16.5-18.85B</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">19 Markets Analyzed</div>
+                    <div class="stat-number">3 Regions</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Projected CAGR (2025-27)</div>
+                    <div class="stat-number">10-18%</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">2026 Market Projection</div>
+                    <div class="stat-number">USD 18.2-21.35B</div>
+                </div>
+            </div>
+            
+            <h3>🔴 Critical Market Developments</h3>
+            
+            <div class="market-card critical">
+                <h4>Brazil - Tax Increase Alert (Effective October 1, 2025)</h4>
+                <p><strong>Development:</strong> GGR tax increased from 12% to 18% via Provisional Measure No. 1,303/2025</p>
+                <p><strong>Revenue Impact:</strong> BRL 3.797 billion collected in taxes January-June 2025 (compared to BRL 14M in 2024 - a 28,018% increase). This represents BRL 849 million in Corporate Income Tax (IRPJ) alone.</p>
+                <p><strong>Market Data:</strong> Estimated BRL 25.2 billion gross revenue in first five months of 2025, far exceeding pre-regulation projections of BRL 8-20 billion annually. May 2025 alone collected BRL 814 million in monthly taxes.</p>
+                <p><strong>Operator Context:</strong> 65 operators running 171 brands across 14 definitive licenses + 52 provisional licenses (December 2025).</p>
+                <p><strong>Strategic Implication:</strong> Tax increase to 18% will compress operator margins significantly. Industry facing potential consolidation wave in 2026.</p>
+            </div>
+            
+            <div class="market-card critical">
+                <h4>South Africa - National Tax Reform Proposal (Public Comment Deadline: January 30, 2026)</h4>
+                <p><strong>Proposal:</strong> National Treasury released draft discussion paper November 25, 2025, proposing 20% national tax on online gambling Gross Gambling Revenue (GGR).</p>
+                <p><strong>Effective Tax Rate Impact:</strong> If enacted, 20% national tax would stack on top of existing provincial taxes (typically 6-9%), creating total effective GGR tax rate of 26-29%.</p>
+                <p><strong>Market Context:</strong> South African gambling market projected EUR 3.63B by 2025, with betting accounting for 60.5% of total earnings. Mobile wagering dominates at 81% of online betting turnover.</p>
+                <p><strong>Key Details:</strong> Current provincial tax rates are 6-9% for betting and 10-15% for casinos. For example, if betting operator generates GGR of R10 million, new combined tax burden could reach 26-29% of that revenue.</p>
+                <p><strong>Industry Reaction:</strong> Sun International CEO reports Sunbet (online platform) would face additional R275 million in tax annually if proposal had been in effect. Operators warning this would be among highest-taxed gambling jurisdictions globally and destabilize legal gaming.</p>
+                <p><strong>Potential Upside:</strong> Proposal signals potential legalization path for online casinos (currently banned under National Gambling Act 2004), though at substantial cost.</p>
+            </div>
+            
+            <div class="market-card critical">
+                <h4>Nigeria - Constitutional Crisis Escalates (Status: HIGH UNCERTAINTY)</h4>
+                <p><strong>Supreme Court Ruling (November 22, 2024):</strong> Court declared gaming and lottery are Residual Matters under Nigerian Constitution, placing gaming regulation exclusively under State Governments' jurisdiction. Court nullified National Lottery Act 2005 and issued perpetual injunctions against Federal Government interference.</p>
+                <p><strong>Legislative Counter-Move (December 2, 2025):</strong> Nigerian Senate passed Central Gaming Bill 2025 (HB 262) on third reading, directly contradicting Supreme Court ruling. Proposed bill aims to establish Central Gaming Commission with federal regulatory authority across all states.</p>
+                <p><strong>Defiance Implications:</strong> Lagos State Attorney-General warned Senate passage amounts to legislative overreach and potential constitutional crisis. Legal experts argue passage violates Section 287(1) of Nigerian Constitution, which makes Supreme Court judgments binding on all authorities.</p>
+                <p><strong>Federated Alternative:</strong> Supreme Court judgment aligns with cooperative federalism through Federation of State Gaming Regulators of Nigeria (FSGRN), providing clear path for 28-state licensing model with National Lottery Regulatory Commission coordination.</p>
+                <p><strong>Market Leaders:</strong> BetKing achieved 76% YoY revenue surge to USD 106M (FY25). Bet9ja holds approximately 6% market share. SportyBet is 4th most-visited website nationally (July 2025).</p>
+                <p><strong>Tax Context:</strong> Federal excise duty (5%) and federal withholding tax (5%) on player wins now effective, though legality questioned pending constitutional resolution.</p>
+                <p><strong>Entry Timeline:</strong> Regulatory confidence is LOW. Market entry should be deferred until Q2 2026, pending resolution of constitutional conflict. Expect 6-12 month regulatory vacuum.</p>
+            </div>
+            
+            <div class="market-card positive">
+                <h4>Peru - Market Expansion with Urgent Entry Window Closing</h4>
+                <p><strong>Market Size:</strong> Total gambling market estimated at USD 2.51 billion (2024), with online gambling contributing approximately USD 1.2 billion. 2025-2026 projection shows online gambling sector could generate USD 145 million in revenue for 2025, with total market growth to USD 3 billion by 2026. December 2025 marked as URGENT for filing applications to ensure licensing completion by January 2026.</p>
+                <p><strong>Operator Authorization:</strong> 120 licenses granted to 60 online gambling operators (sports betting + online casino games) as of December 2025.</p>
+                <p><strong>Key Operators:</strong> Apuesta Total stands out with aggressive expansion strategies and high-profile football sponsorships. Other leading brands: Inkabet, Te Apuesto, Betsson, Bet365, 1xBet.</p>
+                <p><strong>Digital Infrastructure:</strong> Internet penetration at 75% (early 2024) with mobile connections exceeding total population. Mobile payments account for 59% of all e-commerce transactions, signaling strong mobile-first betting demand.</p>
+                <p><strong>Capital Requirements:</strong> Approximately EUR 792,000 (USD 235K+) capital guarantee required per license with 6-year validity.</p>
+                <p><strong>Tax Burden:</strong> Rising to 13%+ effective rate (comprised of 12% GGR tax + 1% selective consumption tax). Operators must host all servers, data, and player information locally in Peru. Cryptocurrency for payments explicitly prohibited.</p>
+                <p><strong>Growth Projections:</strong> Market projection for 2026 is USD 850M-1.1B with potential to reach USD 7.5 billion by 2033 if current trends persist.</p>
+            </div>
+            
+            <div class="market-card warning">
+                <h4>Angola - New Tax Framework Creates Entry Opportunities</h4>
+                <p><strong>Regulatory Update:</strong> Law 17/24 implementation progressing with significant tax reductions and licensing via public tender (not administrative approval).</p>
+                <p><strong>Tax Reform:</strong> Casino GGR tax reduced from 45% to 25%. Sports betting GGR tax set to 20%. Winnings below USD 200 excluded from tax regime, improving player retention.</p>
+                <p><strong>Licensing Structure:</strong> International operators no longer required to form joint ventures with local businesses - can establish locally registered companies independently. Public tender bidding ensures level playing field for all competitors.</p>
+                <p><strong>License Cost Estimate:</strong> Approximately EUR 120K per license with enhanced AML obligations and compliance requirements.</p>
+                <p><strong>Status:</strong> First-Mover Advantage opportunity in public tender with stable regulatory framework for operator planning.</p>
+            </div>
+            
+            <h3>📊 Key Rankings Summary (2026)</h3>
             <table>
                 <thead>
                     <tr>
                         <th>Rank</th>
                         <th>Country</th>
-                        <th>Ease</th>
-                        <th>Cost</th>
-                        <th>Competition</th>
-                        <th>Potential</th>
-                        <th>Overall</th>
+                        <th>Overall Score</th>
                         <th>Tier</th>
                         <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>1</td><td>Panama</td><td>8</td><td>7</td><td>8</td><td>5</td><td><strong>7.00</strong></td><td>TIER 1</td><td>Stable (B2B Hub)</td></tr>
-                    <tr><td>2</td><td>Costa Rica</td><td>8</td><td>8</td><td>7</td><td>4</td><td><strong>6.75</strong></td><td>TIER 1</td><td>Stable (B2B Hub)</td></tr>
-                    <tr><td>3</td><td>Paraguay</td><td>6</td><td>7</td><td>8</td><td>6</td><td><strong>6.75</strong></td><td>TIER 1</td><td><span class="success">NEW LAW - Growth Phase ↗</span></td></tr>
-                    <tr><td>4</td><td>Dominican Republic</td><td>7</td><td>5</td><td>7</td><td>7</td><td><strong>6.50</strong></td><td>TIER 1</td><td>Closing Window</td></tr>
-                    <tr><td>5</td><td>Peru</td><td>7</td><td>6</td><td>5</td><td>8</td><td><strong>6.50</strong></td><td>TIER 1</td><td>Expanding (Urgent Entry)</td></tr>
-                    <tr><td>6</td><td>Brazil</td><td>6</td><td>4</td><td>5</td><td>9</td><td><strong>6.00</strong></td><td>TIER 2</td><td>Normalizing</td></tr>
-                    <tr><td>7</td><td>South Africa</td><td>6</td><td>6</td><td>5</td><td>7</td><td><strong>6.25</strong></td><td>TIER 2</td><td><span class="warning">TAX REFORM PENDING ↗</span></td></tr>
-                    <tr><td>8</td><td>Nigeria</td><td>5</td><td>5</td><td>6</td><td>8</td><td><strong>5.50</strong></td><td>TIER 2</td><td><span class="warning">UNCERTAINTY RISING ↘</span></td></tr>
-                    <tr><td>9</td><td>Kenya</td><td>5</td><td>6</td><td>6</td><td>7</td><td><strong>6.00</strong></td><td>TIER 2</td><td>Monitoring (Biometric Mandate)</td></tr>
-                    <tr><td>10</td><td>Uganda</td><td>6</td><td>6</td><td>7</td><td>5</td><td><strong>6.00</strong></td><td>TIER 2</td><td>Stable</td></tr>
-                    <tr><td>11</td><td>Angola</td><td>5</td><td>6</td><td>7</td><td>6</td><td><strong>6.00</strong></td><td>TIER 2</td><td>On Track (Tender Pending)</td></tr>
-                    <tr><td>12</td><td>Colombia</td><td>7</td><td>5</td><td>4</td><td>7</td><td><strong>5.75</strong></td><td>TIER 2</td><td>Maturing (Consolidation)</td></tr>
-                    <tr><td>13</td><td>Ghana</td><td>6</td><td>5</td><td>6</td><td>6</td><td><strong>5.75</strong></td><td>TIER 2</td><td>Biometric Integration</td></tr>
-                    <tr><td>14</td><td>Ecuador</td><td>5</td><td>5</td><td>8</td><td>5</td><td><strong>5.75</strong></td><td>TIER 2</td><td>Stable (Tax Formalization)</td></tr>
-                    <tr><td>15</td><td>Argentina</td><td>5</td><td>6</td><td>4</td><td>6</td><td><strong>5.25</strong></td><td>TIER 2</td><td>Waiting for Federal Law</td></tr>
-                    <tr><td>16</td><td>Mexico</td><td>4</td><td>5</td><td>3</td><td>6</td><td><strong>4.50</strong></td><td>TIER 3</td><td>Offshore Dominant</td></tr>
-                    <tr><td>17</td><td>Bolivia</td><td>3</td><td>4</td><td>8</td><td>3</td><td><strong>4.50</strong></td><td>TIER 3</td><td>Grey Market</td></tr>
-                    <tr><td>18</td><td>Morocco</td><td>2</td><td>6</td><td>6</td><td>3</td><td><strong>4.25</strong></td><td>TIER 3</td><td>Tax-Only Strategy</td></tr>
-                    <tr><td>19</td><td>Egypt</td><td>1</td><td>3</td><td>7</td><td>2</td><td><strong>3.25</strong></td><td>TIER 3</td><td>PROHIBITED</td></tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Panama</td>
+                        <td>7.00</td>
+                        <td><span class="status-badge status-tier1">Tier 1</span></td>
+                        <td>Stable (B2B Hub)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Costa Rica</td>
+                        <td>6.75</td>
+                        <td><span class="status-badge status-tier1">Tier 1</span></td>
+                        <td>Stable (B2B Hub)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paraguay</td>
+                        <td>6.75</td>
+                        <td><span class="status-badge status-tier1">Tier 1</span></td>
+                        <td>NEW LAW - Growth Phase ↗</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Dominican Republic</td>
+                        <td>6.50</td>
+                        <td><span class="status-badge status-tier1">Tier 1</span></td>
+                        <td>Closing Window</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Peru</td>
+                        <td>6.50</td>
+                        <td><span class="status-badge status-tier1">Tier 1</span></td>
+                        <td>Expanding (URGENT ENTRY)</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Brazil</td>
+                        <td>6.00</td>
+                        <td><span class="status-badge status-tier2">Tier 2</span></td>
+                        <td>Normalizing (Tax Increase)</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>South Africa</td>
+                        <td>6.25</td>
+                        <td><span class="status-badge status-tier2">Tier 2</span></td>
+                        <td>TAX REFORM PENDING ↗</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Nigeria</td>
+                        <td>5.50</td>
+                        <td><span class="status-badge status-tier2">Tier 2</span></td>
+                        <td>UNCERTAINTY RISING ↘</td>
+                    </tr>
                 </tbody>
             </table>
             
-            <p><strong>Weekly Changes Summary:</strong></p>
+            <h3>⚡ Weekly Changes Summary</h3>
             <ul>
-                <li>Markets Moving UP: South Africa (Tax reform signals, +0.25 score) and Paraguay (New law momentum, +inclusion in Tier 1).</li>
-                <li>Markets Moving DOWN: Nigeria (Constitutional crisis, -0.5 score).</li>
+                <li><strong>Markets Moving UP:</strong> Angola (new tax framework clarity, +0.30 score), South Africa (tax reform signals potential online casino legalization path, +0.25 score)</li>
+                <li><strong>Markets Moving DOWN:</strong> Nigeria (constitutional crisis escalating with Senate defiance of Supreme Court, -0.75 score downward revision), Brazil (GGR tax increase to 18% margin compression, -0.30 score)</li>
+                <li><strong>New Entry Windows:</strong> Angola tender submissions Q1-Q3 2026, Peru applications URGENT (December 2025 filing deadline)</li>
             </ul>
         </div>
-
-        <div id="south-america-content" class="content-section market-analysis-section">
-            <h2>CRITICAL DEVELOPMENTS - SOUTH AMERICA</h2>
+        
+        <!-- SOUTH AMERICA SECTION -->
+        <div id="southamerica" class="content-section">
+            <h2>South America: Regional Dominance & Opportunity Zones</h2>
             
-            <h3>BRAZIL - Market Dominance & Regulatory Maturation</h3>
+            <p>South America accounts for the largest regional market, with 2025 projection of USD 8.3-9.2B and 2026 projection of USD 9.7-11.4B (10-18% CAGR).</p>
+            
+            <h3>🇧🇷 Brazil - Largest Market (Tier 2 - Normalizing Post-Tax Increase)</h3>
+            
+            <div class="box-info">
+                <strong>Market Size & Growth:</strong> Largest in Latin America with USD 1.506 billion (2024) growing to USD 3.01 billion by 2030 at 12.3% CAGR.
+            </div>
+            
+            <h4>Recent Tax Development (October 1, 2025)</h4>
             <ul>
-                <li>Market Scale: Largest in Latin America. Total South America market projected at <strong>USD 8.3-9.2B for 2025</strong>.</li>
-                <li>Revenue Trajectory: <strong>USD 1.506 billion (2024)</strong> growing to <strong>USD 3.01 billion by 2030</strong> at <strong>12.3% CAGR</strong>.</li>
-                <li>Tax Performance: May 2025 alone collected <strong>BRL 814 million</strong> in monthly taxes.</li>
-                <li>Key Competitors: SuperBet, MGM, Bet365, Betsson, Caesars among the 14 definitive licensees.</li>
-                <li>Marketing Strategy: Celebrity marketing essential as Brazilian players are responsive to influencer engagement (noting new advertisement restrictions on public figures).</li>
-                <li>Payment Restrictions: Credit card and cryptocurrency betting are prohibited.</li>
+                <li><strong>Tax Rate Change:</strong> GGR tax increased from 12% to 18% via Provisional Measure No. 1,303/2025, effective October 1, 2025</li>
+                <li><strong>Tax Revenue Surge:</strong> BRL 3.797 billion collected January-June 2025 (28,018% increase from BRL 14M in 2024)</li>
+                <li><strong>Corporate Income Tax:</strong> IRPJ collected reached BRL 849 million (€152.82M) in H1 2025, up from only BRL 5M (€900K) in 2024</li>
+                <li><strong>Additional Collections:</strong> BRL 331 million from fixed-odds lottery quotas; BRL 211 million in June through PIS/Cofins taxes</li>
+                <li><strong>Monthly Peak:</strong> May 2025 collected BRL 814 million in monthly taxes</li>
             </ul>
             
-            <h4>Brazil - Detailed Regulatory & Market Analysis (Tier 1 Priority)</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Expanded Regulatory & Market Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Regulatory Status</strong></td>
-                        <td>Market officially became fully regulated on January 1, 2025, under Law No. 14,790/2023. Overseen by the Secretariat of Prizes and Bets (SPA) within the Ministry of Finance.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Licensing & Fees</strong></td>
-                        <td>14 definitive licenses granted with 52 provisional licenses pending full system certification. Concession fee: BRL 30 million (approximately USD 6 million) for up to three commercial brands. License term is five years, non-transferable.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tax Structure</strong></td>
-                        <td>Effective tax rate on Gross Gambling Revenue (GGR): 12%. Allocated to social programs: Education (10%) and Sports (36%).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Compliance Mandates</strong></td>
-                        <td>Operators must establish local company with minimum 20% Brazilian shareholder. Stringent KYC/AML requiring facial recognition. All licensed operators must adopt .bet.br domain extension. Player withdrawals must process within 120 minutes.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Competitive Context</strong></td>
-                        <td>Market growing at 16.51% CAGR. Sports betting segment generated 56.3% of revenue share in 2024. Marketing heavily focused on celebrity partnerships and mass-market sports sponsorship (with restrictions on athlete/influencer endorsements per Bill 2,985/2023).</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h4>Market Performance & Structure</h4>
+            <ul>
+                <li><strong>Revenue Trajectory:</strong> Estimated BRL 25.2 billion gross revenue in first five months of 2025, far exceeding pre-regulation projections of BRL 8-20 billion annually</li>
+                <li><strong>Licensing Status:</strong> 14 definitive licenses (full authorization) + 52 provisional licenses as of December 2025</li>
+                <li><strong>Operator Count:</strong> 65 operators running 171 brands (August 2025 data)</li>
+                <li><strong>Market Leaders:</strong> SuperBet, MGM, Bet365, Betsson, Caesars among definitive licensees</li>
+                <li><strong>Revenue Share:</strong> Sports betting segment generated 56.3% of revenue share in 2024</li>
+                <li><strong>Mobile Adoption:</strong> 95% mobile adoption projected by 2030</li>
+            </ul>
             
-            <hr>
-
-            <h3>PERU - Urgent Entry Window with Rising Tax Burden</h3>
+            <h4>Regulatory Framework & Compliance</h4>
             <ul>
-                <li>Market Maturity: Fully regulated since February 2024 (Law No. 31557).</li>
-                <li>Market Scale: <strong>USD 850M-1.1B 2026 projection</strong>. Market penetration at <strong>28.1%</strong> (highest in LatAm).</li>
-                <li>Operator Authorization: <strong>59 operators</strong> received authorization during first year of regulatory regime.</li>
-                <li>Tax Burden: Rising to <strong>13%+ effective rate</strong> (comprised of 12% GGR tax + 1% selective consumption tax).</li>
-                <li>Capital Requirements: High, with minimum guarantee of <strong>USD 235K+</strong> (previously cited as EUR 792,000).</li>
-                <li>Entry Status: URGENT ENTRY - Competitive window closing due to rising tax burden and increasing competition.</li>
+                <li><strong>Regulation Date:</strong> Fully regulated January 1, 2025, under Law No. 14,790/2023</li>
+                <li><strong>Regulatory Body:</strong> Secretariat of Prizes and Bets (SPA) within Ministry of Finance</li>
+                <li><strong>Concession Fee:</strong> BRL 30 million (approximately USD 6 million) for up to three commercial brands</li>
+                <li><strong>License Term:</strong> Five years, non-transferable</li>
+                <li><strong>Local Requirement:</strong> Must establish local company with minimum 20% Brazilian shareholder</li>
+                <li><strong>Compliance Mandates:</strong> Stringent KYC/AML requiring facial recognition. All licensed operators must adopt .bet.br domain extension</li>
+                <li><strong>Withdrawal Timeline:</strong> Player withdrawals must process within 120 minutes</li>
+                <li><strong>Ordinance 827 (January 2025):</strong> Closed regulatory loopholes; multi-brand operation permitted (up to 3 brands per license)</li>
             </ul>
-
-            <h4>Peru - Detailed Regulatory & Market Analysis (Tier 1/Urgent Entry)</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Expanded Regulatory & Market Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Regulatory Status</strong></td>
-                        <td>Online gaming and sports betting fully regulated under Law No. 31557, effective February 9, 2024. Regulatory body: MINCETUR (Ministry of Foreign Trade and Tourism).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Digital Infrastructure</strong></td>
-                        <td>Internet penetration at 75% (early 2024). Mobile connections exceed total population. Mobile payments account for 59% of all e-commerce transactions, signaling strong mobile-first betting demand.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Licensing & Fees</strong></td>
-                        <td>59 operators authorized in first year. Capital guarantee required: approximately EUR 792,000 per license (approximately USD 235K+). Licenses granted for six years.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tax Structure</strong></td>
-                        <td>Special gaming tax: 12% of operator net profit. Consumption tax on player: 0.3% of bet value (reduced rate until July 2025).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Compliance Mandates</strong></td>
-                        <td>Servers, data, and all player information must be hosted locally in Peru. Cryptocurrency for payments explicitly prohibited. Operators must implement AML system (SPLAFT) and appoint qualified compliance officer.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Market Context</strong></td>
-                        <td>Market projection for 2026: USD 850M-1.1B. December 2025 marked as URGENT for filing applications to ensure licensing completion by January 2026.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h3>PARAGUAY - Greenfield Opportunity with Attractive Tax Framework</h3>
+            
+            <h4>Advertising & Marketing Restrictions (2025)</h4>
             <ul>
-                <li>Regulatory Status: New law 7348/2025 signed May 10, 2025.</li>
-                <li>Market Scale: <strong>USD 90-150M 2026 projection</strong> (greenfield acceleration phase).</li>
-                <li>Tax Attractiveness: Advertised as having the lowest regional tax burden versus Brazil, Colombia, and Peru.</li>
-                <li>Capital Requirements: Medium (USD 150-300K per license).</li>
-                <li>First-Mover Advantage: Limited operator base creates opportunity for market share capture before consolidation.</li>
+                <li><strong>Bill No. 2,985/2023 Implementation:</strong> Senate-approved restrictions on use of artists, athletes, influencers, and public figures in betting advertisements (effective 2025)</li>
+                <li><strong>Marketing Strategy:</strong> Celebrity partnerships and creative promotions essential but must comply with new restrictions on athlete/influencer endorsements</li>
+                <li><strong>Competitor Context:</strong> Current operators (Supabets, major international brands) developing alternative marketing strategies post-restriction</li>
             </ul>
-
-            <hr>
-
-            <h3>COLOMBIA - Maturing & Consolidation Phase</h3>
+            
+            <h4>Payment & Product Restrictions</h4>
             <ul>
-                <li>Operator Count: Market consolidation underway with 16 fully authorized online platforms.</li>
-                <li>Tax Framework: High costs due to 19% VAT plus monthly fixed fees.</li>
-                <li>Growth Moderation: Growth moderating to 4-6% YoY. Consolidation of 16-18 core operators expected in 2026.</li>
-                <li>Entry Recommendation: Avoid new entries; consolidation opportunities more viable.</li>
+                <li>Credit card betting prohibited</li>
+                <li>Cryptocurrency betting prohibited</li>
+                <li>Platform separation mandate enforced (distinct betting and casino operations)</li>
             </ul>
-
-            <hr>
-
-            <h3>ECUADOR - Tax-Driven Formalization & Growth</h3>
+            
+            <div class="box-warning">
+                <strong>Strategic Implications:</strong> 18% GGR tax increase will compress operator margins significantly. Industry facing consolidation wave potential in 2026. New market entrants face high barriers to entry due to minimum BRL 30M concession fees and stringent compliance requirements.
+            </div>
+            
+            <h3>🇵🇪 Peru - Urgent Entry Market (Tier 1 - Expanding)</h3>
+            
+            <div class="box-success">
+                <strong>Status: URGENT ENTRY - Applications due December 2025 for January 2026 licensing completion</strong>
+            </div>
+            
+            <h4>Market Scale & Projections</h4>
             <ul>
-                <li>Tax Obligations: <strong>30% combined burden</strong> (15% GGR tax + 15% withholding tax on player winnings).</li>
-                <li>Growth Performance: Market saw 40% growth in H1 2024 due to formalization push.</li>
-                <li>Market Leaders: Ecuabet (dominant); Betano and DoradoBet gaining market share.</li>
-                <li>Market Structure: Mature, with consolidation underway among mid-tier operators.</li>
+                <li><strong>Market Size (2024):</strong> Total gambling market estimated at USD 2.51 billion, with online gambling contributing approximately USD 1.2 billion</li>
+                <li><strong>2025 Projection:</strong> Online gambling sector could generate USD 145 million in revenue for 2025</li>
+                <li><strong>2026 Projection:</strong> Total market growth to USD 3 billion by 2026</li>
+                <li><strong>2033 Potential:</strong> Market could surpass USD 7.5 billion if current trends persist</li>
+                <li><strong>Market Penetration:</strong> Highest in LatAm at 28.1%</li>
+                <li><strong>Growth Rate:</strong> Double-digit annual growth projected over next decade</li>
             </ul>
-
-            <hr>
-
-            <h3>ARGENTINA - Provincial Fragmentation Awaiting Federal Framework</h3>
+            
+            <h4>Digital Infrastructure & Consumer Profile</h4>
             <ul>
-                <li>Status: No federal framework yet; 24 separate provincial regimes operational.</li>
-                <li>Market Sizing: <strong>USD 450-550M</strong> projected.</li>
-                <li>Regulatory Outlook: Federal legislation potentially 12-18 months away.</li>
-                <li>Strategy: Provincial entry feasible but federal harmonization will reshape landscape.</li>
+                <li><strong>Internet Penetration:</strong> 75% (early 2024) with mobile connections exceeding total population</li>
+                <li><strong>Mobile Payments:</strong> Account for 59% of all e-commerce transactions, signaling strong mobile-first betting demand</li>
+                <li><strong>Player Base:</strong> Over 7 million registered accounts with focus on sports betting (football dominates with European leagues + local competitions)</li>
+                <li><strong>Geographic Opportunity:</strong> Expansion potential outside Lima in cities like Cusco, Trujillo, and Arequipa as local demand grows</li>
+            </ul>
+            
+            <h4>Operator Landscape</h4>
+            <ul>
+                <li><strong>Licensing Status:</strong> 120 licenses granted to 60 online gambling operators (sports betting + online casino games) as of December 2025</li>
+                <li><strong>License Term:</strong> Six years validity</li>
+                <li><strong>Key Operators:</strong> Apuesta Total (with aggressive expansion strategies and high-profile football sponsorships), Inkabet, Te Apuesto, Betsson, Bet365, 1xBet</li>
+                <li><strong>Market Dynamic:</strong> Local brands (Apuesta Total, Inkabet, Te Apuesto) compete alongside international heavyweights, increasingly sophisticated competition</li>
+                <li><strong>Technology Requirements:</strong> Mobile-first platforms, advanced risk management, and instant online payments essential for competitive positioning</li>
+            </ul>
+            
+            <h4>Regulatory Framework (Law No. 31557)</h4>
+            <ul>
+                <li><strong>Effective Date:</strong> February 9, 2024</li>
+                <li><strong>Regulatory Body:</strong> MINCETUR (Ministry of Foreign Trade and Tourism)</li>
+                <li><strong>Authorized Activities:</strong> Online gaming and sports betting fully regulated</li>
+                <li><strong>Capital Requirement:</strong> Approximately EUR 792,000 (USD 235K+) capital guarantee per license</li>
+                <li><strong>Infrastructure Mandate:</strong> Servers, data, and all player information must be hosted locally in Peru</li>
+            </ul>
+            
+            <h4>Tax Structure & Compliance</h4>
+            <ul>
+                <li><strong>Special Gaming Tax:</strong> 12% of operator net profit</li>
+                <li><strong>Consumption Tax:</strong> 0.3% of bet value (reduced rate until July 2025)</li>
+                <li><strong>Effective Tax Rate:</strong> Rising to 13%+ as consumption tax normalizes</li>
+                <li><strong>Payment Restrictions:</strong> Cryptocurrency for payments explicitly prohibited</li>
+                <li><strong>AML System:</strong> SPLAFT compliance mandatory with qualified compliance officer appointment required</li>
+            </ul>
+            
+            <div class="box-warning">
+                <strong>Entry Urgency:</strong> Competitive window closing due to rising tax burden and increasing competition. December 2025 marked as URGENT for filing applications to ensure licensing completion by January 2026. Current backlog of 60 operators with 120 licenses creates market consolidation pressure.
+            </div>
+            
+            <h3>🇵🇾 Paraguay - Greenfield Growth Opportunity (Tier 1 - NEW LAW)</h3>
+            
+            <h4>New Regulatory Framework</h4>
+            <ul>
+                <li><strong>Law 7348/2025 Signed:</strong> May 10, 2025</li>
+                <li><strong>Status:</strong> Greenfield acceleration phase with first-mover advantage</li>
+                <li><strong>Market Projection (2026):</strong> USD 90-150M (greenfield acceleration phase)</li>
+                <li><strong>Operator Base:</strong> Limited operator base creates opportunity for market share capture before consolidation</li>
+            </ul>
+            
+            <h4>Market Attractiveness</h4>
+            <ul>
+                <li><strong>Tax Burden:</strong> Advertised as having the lowest regional tax burden versus Brazil, Colombia, and Peru</li>
+                <li><strong>Capital Requirements:</strong> Medium (USD 150-300K per license) vs. higher requirements in Brazil and Peru</li>
+                <li><strong>Entry Timeline:</strong> Monitor tender schedule for Q1 2026 opportunities</li>
+            </ul>
+            
+            <h3>🇨🇴 Colombia - Maturing & Consolidation Phase (Tier 2)</h3>
+            
+            <h4>Market Structure & Evolution</h4>
+            <ul>
+                <li><strong>Licensed Platforms:</strong> Only 16 platforms fully authorized for online gambling and casino activities (as of 2024)</li>
+                <li><strong>Regulatory Authority:</strong> Coljuegos (national body created in 2011) oversees licensing, compliance, and market supervision</li>
+                <li><strong>Market Consolidation:</strong> Consolidation of 16-18 core operators expected in 2026</li>
+                <li><strong>Growth Trajectory:</strong> Growth moderating to 4-6% YoY from earlier high-growth phases</li>
+            </ul>
+            
+            <h4>Licensing & Requirements</h4>
+            <ul>
+                <li><strong>Entry Requirements:</strong> Applicants must be legal entities only (Colombian companies or branches of foreign companies registered in Colombia)</li>
+                <li><strong>Shareholder Screening:</strong> All shareholders (direct and indirect) holding 5%+ must pass background and suitability checks</li>
+                <li><strong>Key Personnel:</strong> Must appoint director and locally-based compliance officer with decision-making authority</li>
+                <li><strong>Licensing Timeline:</strong> Typically 3-6 months from complete application to full authorization</li>
+                <li><strong>Technical Requirements:</strong> All gaming systems must be certified by Coljuegos-approved certification lab (minimum RTP, fairness, player protection)</li>
+            </ul>
+            
+            <h4>Taxation & Compliance Burden</h4>
+            <ul>
+                <li><strong>GGR Tax:</strong> 15% if all games have at least 83% RTP, 17% otherwise</li>
+                <li><strong>Administrative Fee:</strong> 1% of NGR (Net Gaming Revenue)</li>
+                <li><strong>Fixed Annual License Fee:</strong> Additional ongoing cost</li>
+                <li><strong>VAT Burden:</strong> Temporary 19% VAT on player deposits (until December 2025 if extended)</li>
+                <li><strong>Total Burden:</strong> High combined tax/VAT burden affecting market competitiveness</li>
+            </ul>
+            
+            <h4>Recent Enforcement & Market Dynamics</h4>
+            <ul>
+                <li><strong>Black Market Enforcement (2025):</strong> Coljuegos intensified measures against unlicensed operators, blocking over 10,000 illegal websites and social media profiles in early 2025</li>
+                <li><strong>Regulatory Strictness:</strong> Only operators with valid local Coljuegos license may legally offer gambling services</li>
+                <li><strong>Advertising Restrictions:</strong> All marketing must include responsible gambling warnings and addiction disclaimers; marketing to minors strictly prohibited</li>
+            </ul>
+            
+            <div class="box-warning">
+                <strong>Entry Recommendation:</strong> Avoid new entries; consolidation opportunities more viable for existing licensed operators. Market maturation and high tax burden make greenfield entry challenging.
+            </div>
+            
+            <h3>🇪🇨 Ecuador - Tax-Driven Formalization (Tier 2)</h3>
+            
+            <h4>Market Performance</h4>
+            <ul>
+                <li><strong>Growth Performance:</strong> Market saw 40% growth in H1 2024 due to formalization push</li>
+                <li><strong>Market Sizing:</strong> Mid-sized market with consolidation underway among mid-tier operators</li>
+            </ul>
+            
+            <h4>Tax Structure & Requirements</h4>
+            <ul>
+                <li><strong>Combined Burden:</strong> 30% total (15% GGR tax + 15% withholding tax on player winnings)</li>
+                <li><strong>Market Impact:</strong> High tax burden driving formalization agenda but compressing operator margins</li>
+            </ul>
+            
+            <h4>Market Leaders</h4>
+            <ul>
+                <li>Ecuabet (dominant market position)</li>
+                <li>Betano (gaining market share)</li>
+                <li>DoradoBet (gaining market share)</li>
+            </ul>
+            
+            <h3>🇦🇷 Argentina - Provincial Fragmentation (Tier 2)</h3>
+            
+            <h4>Regulatory Structure</h4>
+            <ul>
+                <li><strong>Status:</strong> No federal framework yet; 24 separate provincial regimes operational</li>
+                <li><strong>Market Sizing:</strong> USD 450-550M projected</li>
+                <li><strong>Regulatory Outlook:</strong> Federal legislation potentially 12-18 months away</li>
+                <li><strong>Entry Strategy:</strong> Provincial entry feasible but federal harmonization will reshape landscape</li>
             </ul>
         </div>
-
-        <div id="central-america-content" class="content-section market-analysis-section">
-            <h2>CRITICAL DEVELOPMENTS - CENTRAL AMERICA</h2>
+        
+        <!-- CENTRAL AMERICA SECTION -->
+        <div id="centralamerica" class="content-section">
+            <h2>Central America: B2B Hubs & Growth Markets</h2>
             
-            <h3>PANAMA & COSTA RICA - Regional B2B Offshore Hubs</h3>
-
-            <h4>Panama Hub Analysis</h4>
+            <p>Central America accounts for 2025 projection of USD 2.5-3.0B and 2026 projection of USD 2.8-3.4B (8-15% CAGR).</p>
+            
+            <h3>🇵🇦 Panama - Regional B2B Hub (Tier 1 - Stable)</h3>
+            
+            <h4>Market Role & Strategic Importance</h4>
             <ul>
-                <li>License Structure: Master licenses with 7-year validity, USD 40,000 fee.</li>
-                <li>Tax Structure: 10% tax on GGR; essentially tax-free for income from foreign wagers.</li>
-                <li>Multi-Brand Authorization: Emphasized competitive advantage for multi-brand operations.</li>
-                <li>B2B Hub Role: Primary jurisdiction for Latin American gambling operations infrastructure.</li>
-                <li>Strategic Advantage: Rapid licensing, favorable tax treatment for international operations.</li>
-            </ul>
-
-            <h4>Costa Rica Hub Analysis</h4>
-            <ul>
-                <li>Licensing Approach: Operators obtain "data processing license" (non-gambling-specific designation).</li>
-                <li>Licensing Speed: Rapid licensing (5 business days).</li>
-                <li>Regulatory Efficiency: Known for operational flexibility and streamlined compliance.</li>
-                <li>Regional Role: Secondary B2B hub for Latin American operations.</li>
+                <li><strong>Regional Function:</strong> Primary jurisdiction for Latin American gambling operations infrastructure</li>
+                <li><strong>Overall Score:</strong> 7.00 (Tier 1 ranking)</li>
+                <li><strong>Strategic Advantage:</strong> Rapid licensing, favorable tax treatment for international operations</li>
             </ul>
             
-            <hr>
-
-            <h3>DOMINICAN REPUBLIC - Transitional Competition & Closing Window</h3>
+            <h4>Licensing & Tax Structure</h4>
             <ul>
-                <li>Regulatory Framework: Resolution 136-2024 (first comprehensive online framework).</li>
-                <li>Licensing Details: License cost USD 346,000; 5-year validity; Non-transferable for the first 3 years.</li>
-                <li>Competitive Landscape: Competitive window closing Q1 2026.</li>
-                <li>Entry Timeline: Applications should be filed immediately to secure early-mover positioning.</li>
-                <li>Market Potential: Growing tourism industry supports local player base expansion.</li>
+                <li><strong>Master License Validity:</strong> 7-year validity period</li>
+                <li><strong>License Fee:</strong> USD 40,000</li>
+                <li><strong>Tax Structure:</strong> 10% tax on GGR; essentially tax-free for income from foreign wagers</li>
+                <li><strong>Multi-Brand Authorization:</strong> Emphasized competitive advantage for multi-brand operations (up to 3 brands per license typical)</li>
             </ul>
-
-            <hr>
-
-            <h3>MEXICO - High-Risk, Offshore Dominance</h3>
+            
+            <h3>🇨🇷 Costa Rica - Secondary B2B Hub (Tier 1 - Stable)</h3>
+            
+            <h4>Market Role & Regulatory Approach</h4>
             <ul>
-                <li>Status: Dominated by offshore sites (approximately 90% market share).</li>
-                <li>Entry Complexity: Licensing path effectively unavailable for non-connected entities.</li>
-                <li>Capital Requirements: USD 5M+ capital requirement plus government connections needed.</li>
-                <li>Recommendation: Entry not viable for new independent operators. Government relationships essential.</li>
+                <li><strong>Regional Function:</strong> Secondary B2B hub for Latin American operations</li>
+                <li><strong>Overall Score:</strong> 6.75 (Tier 1 ranking)</li>
+                <li><strong>Licensing Approach:</strong> Operators obtain "data processing license" (non-gambling-specific designation)</li>
+                <li><strong>Regulatory Efficiency:</strong> Known for operational flexibility and streamlined compliance</li>
             </ul>
-        </div>
-
-        <div id="africa-content" class="content-section market-analysis-section">
-            <h2>CRITICAL DEVELOPMENTS - AFRICA</h2>
-
-            <h3>SOUTH AFRICA - Tax Reform Catalyst & Market Expansion Signal</h3>
+            
+            <h4>Licensing Speed & Operational Advantages</h4>
             <ul>
-                <li>Market Scale: Betting accounts for 60.5% of broader gambling market.</li>
-                <li>Broader Market: Projected EUR 3.63B by 2025, with mobile wagering at 81% of online betting turnover.</li>
-                <li>Tax Reform: Draft proposal for 20% national tax on online gambling. Total tax rate could rise to 26-29%.</li>
-                <li>Regulatory Compliance: Supreme Court ruling mandates Platform Separation Mandate (segregate betting and casino products).</li>
-                <li>Market Growth: Africa's online gambling market expected to reach USD 11.27 billion by 2032.</li>
+                <li><strong>Licensing Speed:</strong> Rapid licensing (5 business days)</li>
+                <li><strong>Operational Flexibility:</strong> Streamlined compliance with less stringent KYC/AML than regional alternatives</li>
+                <li><strong>Tax Efficiency:</strong> Favorable tax treatment for B2B operations</li>
             </ul>
-
-            <h4>South Africa - Detailed Regulatory & Market Analysis (Tier 2/Major Regulatory Shift)</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Expanded Regulatory & Market Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Regulatory Status</strong></td>
-                        <td>Online sports betting is legal and provincially regulated. Online casino/interactive gambling remains technically unlawful under National Gambling Act 2004.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tax Reform Proposal (New)</strong></td>
-                        <td>National Treasury released draft discussion paper November 25, 2025. Proposal introduces 20% national tax on Gross Gambling Revenue (GGR) for all online gambling.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Effective Tax Rate</strong></td>
-                        <td>If enacted, 20% national tax would be levied in addition to existing provincial taxes (typically 6-9%), pushing total effective GGR tax rate to 26-29%.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Timeline & Impact</strong></td>
-                        <td>Deadline for public comments on draft proposal: January 30, 2026. Proposed tax, while controversial, signals potential path for online casino legalization in medium term.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Competitive Context</strong></td>
-                        <td>Overall market projected EUR 3.63B by 2025. Mobile wagering dominates at 81% of online betting turnover. Current operators (Supabets, major international brands) may face margin compression if tax passes.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h3>NIGERIA - Constitutional Crisis & Federated Licensing Model</h3>
+            
+            <h3>🇩🇴 Dominican Republic - Transitional Competition (Tier 1 - Closing Window)</h3>
+            
+            <h4>Regulatory Framework</h4>
             <ul>
-                <li>Crisis Status: Supreme Court vs. National Assembly standoff unresolved. 6-12 months likely regulatory vacuum.</li>
-                <li>Court Ruling: Supreme Court ruled November 22, 2024, that gaming is state-exclusive competency.</li>
-                <li>Legislative Challenge: National Assembly considering "Central Gaming Bill 2025," directly contradicting court ruling.</li>
-                <li>Tax Context: Federal excise duty (5%) and federal withholding tax (5%) on player wins now effective.</li>
-                <li>Federated Model: 28-state licensing model aligns approvals between National Lottery Regulatory Commission and state regulators (e.g., Lagos State Lotteries Board).</li>
-                <li>Market Leaders: BetKing saw 76% YoY revenue surge to USD 106M (FY25). Bet9ja holds approximately 6% market share. SportyBet is 4th most-visited website nationally (July 2025).</li>
-                <li>Entry Strategy: Three distinct pathways emerging: state-by-state, unified remote operator, and offshore routes.</li>
+                <li><strong>Regulatory Framework:</strong> Resolution 136-2024 (first comprehensive online framework)</li>
+                <li><strong>Overall Score:</strong> 6.50 (Tier 1 ranking)</li>
+                <li><strong>Competitive Status:</strong> Competitive window closing Q1 2026</li>
             </ul>
-
-            <h4>Nigeria - Detailed Regulatory & Market Analysis (Tier 2/Constitutional Crisis)</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Expanded Regulatory & Market Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Regulatory Status</strong></td>
-                        <td>Environment in state of high uncertainty and constitutional crisis. Supreme Court ruled November 22, 2024, that gaming and lottery are Residual Matters, giving State Governments exclusive legislative control.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Federal-State Impasse</strong></td>
-                        <td>National Assembly considering "Central Gaming Bill 2025," move that directly defies Supreme Court's ruling. Lagos State initiated legal steps for contempt proceedings against National Assembly.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Federated Licensing Model</strong></td>
-                        <td>28-state licensing model with federal coordination reducing duplication and strengthening AML oversight. Aligns approvals between NLRC and state regulators like Lagos State Lotteries Board.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tax & Financials</strong></td>
-                        <td>Market fragmented with federal taxes (5% excise duty and 5% withholding tax) still in place, but legality/enforcement questioned due to state-level control ruling. Market driven by high demand.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Outlook & Action</strong></td>
-                        <td>Regulatory confidence is LOW, with projected 6-12 month delay in clarity. Market entry recommended to be deferred until Q2 2026, pending resolution of constitutional conflict.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h3>KENYA - Regulatory Transition & Real-Time Monitoring</h3>
+            
+            <h4>Licensing Details & Capital Requirements</h4>
             <ul>
-                <li>Regulatory Framework: Gambling Act 2025 passed; dissolved old Betting Control and Licensing Board (BCLB), creating Gambling Regulatory Authority (GRA).</li>
-                <li>Tax Structure Overhaul: New 5% withdrawal tax replaces prior 20% tax on net earnings + 15% excise duty.</li>
-                <li>Technical Requirements: Mandatory biometric player identification (fingerprints, facial/iris scans) for all new accounts. Real-time monitoring system linked to Kenya Revenue Authority enforced.</li>
-                <li>Local Ownership: 30% local ownership requirement adds complexity to foreign operator entry.</li>
-                <li>Player Base: Over 7 million Kenyans have registered sportsbook accounts (highest engagement in Africa). Football betting dominates.</li>
-                <li>Consolidation Outlook: Expected consolidation from 99 operators to 15-20 core survivors.</li>
+                <li><strong>License Cost:</strong> USD 346,000</li>
+                <li><strong>License Term:</strong> 5-year validity</li>
+                <li><strong>Transfer Restrictions:</strong> Non-transferable for the first 3 years</li>
+                <li><strong>Entry Timeline:</strong> Applications should be filed immediately to secure early-mover positioning</li>
             </ul>
-
-            <hr>
-
-            <h3>UGANDA - Rising Star with Mobile Betting Focus</h3>
+            
+            <h4>Market Context & Tourism Advantage</h4>
             <ul>
-                <li>Market Drivers: Population of 48 million embracing mobile betting via affordable smartphones and increasing internet access.</li>
-                <li>Betting Preference: Football remains primary focus with European leagues and local competitions attracting play.</li>
-                <li>Operator Growth: Government doubled number of registered betting operators, signaling strong industry support.</li>
-                <li>Regulatory Challenges: Concerns over gambling addiction leading to discussions about stricter regulations.</li>
-                <li>Competitive Advantage: Low-cost mobile betting ecosystem continues attracting both bettors and operators.</li>
+                <li><strong>Growing Tourism Industry:</strong> Supports local player base expansion</li>
+                <li><strong>Market Potential:</strong> Growing online betting demand from domestic and tourism segments</li>
+                <li><strong>Entry Status:</strong> Applications critical before Q1 2026 deadline for competitive positioning</li>
             </ul>
-
-            <hr>
-
-            <h3>ANGOLA - New Law Stabilizing Market with Tax Reduction</h3>
+            
+            <h3>🇲🇽 Mexico - High-Risk, Offshore Dominance (Tier 3)</h3>
+            
+            <h4>Market Dynamics</h4>
             <ul>
-                <li>Regulatory Framework: Law 17/24 implementation progressing.</li>
-                <li>Tax Structure Reform: Sports betting GGR tax set to 20% (major reduction from prior 45%).</li>
-                <li>License Cost: Estimates indicate approximately EUR 120K cost.</li>
-                <li>Entry Status: First-Mover Advantage in public tender.</li>
-                <li>Regulatory Clarity: Law 17/24 provides stable framework for operator planning.</li>
+                <li><strong>Offshore Dominance:</strong> Dominated by offshore sites (approximately 90% market share)</li>
+                <li><strong>Regulatory Reality:</strong> Licensing path effectively unavailable for non-connected entities</li>
+                <li><strong>Overall Score:</strong> 4.50 (Tier 3 ranking)</li>
             </ul>
-
-            <hr>
-
-            <h3>GHANA - Maturing Market & Cryptocurrency Adoption</h3>
+            
+            <h4>Entry Barriers & Capital Requirements</h4>
             <ul>
-                <li>Market Integration: Biometric integration mandated (September 30 deadline).</li>
-                <li>Capital Requirements: Estimated USD 2.0M+ requirement for new operators.</li>
-                <li>Cryptocurrency Trend: Growing trend of cryptocurrency gambling (Bitcoin, Ethereum) for deposits/withdrawals.</li>
-                <li>Market Structure: Seven land-based casinos (five in Accra, rest in Kumasi and Tema). Clear regulations attract innovative operators.</li>
-                <li>Entry Status: Avoid (mature, saturated, consolidation phase).</li>
-            </ul>
-
-            <hr>
-
-            <h3>AFRICA REGIONAL OUTLOOK - Growth Trajectory & Opportunities</h3>
-            <ul>
-                <li>Continental Growth: Africa's online gambling market expected to reach USD 11.27 billion by 2032.</li>
-                <li>CAGR: Projected 5.81% CAGR until 2029 across major markets.</li>
-                <li>Key Trends: Cryptocurrency betting will bypass banking restrictions. Mobile-first betting dominance continues as smartphone penetration increases. Regulatory improvements legalize and regulate gambling. International operators show increasing interest in Africa as high-growth frontier.</li>
-                <li>Responsible Gambling: AGRA guidelines require deposit limits, time-out features, self-exclusion tools. Nigeria's NLRC partnering with NGOs targeting 20% reduction in problem gambling by 2026.</li>
+                <li><strong>Capital Requirements:</strong> USD 5M+ capital requirement plus government connections needed</li>
+                <li><strong>Entry Complexity:</strong> Licensing path effectively unavailable for independent operators</li>
+                <li><strong>Market Entry Recommendation:</strong> Entry not viable for new independent operators. Government relationships essential for any legal licensing pathway.</li>
             </ul>
         </div>
-
-        <div id="sizing-content" class="content-section market-analysis-section">
-            <h2>MARKET SIZING PROJECTIONS & CONFIDENCE LEVELS</h2>
-
+        
+        <!-- AFRICA SECTION -->
+        <div id="africa" class="content-section">
+            <h2>Africa: High-Growth Frontier & Regulatory Evolution</h2>
+            
+            <p>Africa accounts for 2025 projection of USD 2.2-2.8B and 2026 projection of USD 2.4-3.1B (8-15% CAGR). Projected continental growth to reach USD 11.27 billion by 2032.</p>
+            
+            <h3>🇿🇦 South Africa - Tax Reform & Regulatory Shift (Tier 2)</h3>
+            
+            <h4>National Tax Reform Proposal (December 2025)</h4>
+            <ul>
+                <li><strong>Proposal Date:</strong> Released November 25, 2025 by National Treasury</li>
+                <li><strong>Public Comment Deadline:</strong> January 30, 2026</li>
+                <li><strong>Proposed Tax:</strong> 20% national tax on Gross Gambling Revenue (GGR) for all online gambling</li>
+                <li><strong>Effective Tax Impact:</strong> Would stack on top of existing provincial taxes (6-9%), creating total 26-29% effective GGR tax rate</li>
+                <li><strong>Revenue Projection:</strong> Treasury estimates could add R10 billion (approximately EUR 540M) to national fiscus</li>
+            </ul>
+            
+            <h4>Market Context & Current Tax Rates</h4>
+            <ul>
+                <li><strong>Current Provincial Taxes:</strong> 6-9% for betting, 10-15% for casinos (payable to provincial tax authorities)</li>
+                <li><strong>Example Tax Calculation:</strong> GGR of R10M would face: Provincial tax (6-9%) = R600K-900K, National tax (20% proposed) = R2M, Total = R2.6M-2.9M (26-29% effective rate)</li>
+                <li><strong>VAT Additional Burden:</strong> Operators already liable for 15% VAT on GGR (unique to South Africa), making combined burden potentially 38-39% for licensed bookmakers</li>
+            </ul>
+            
+            <h4>Market Scale & Opportunity</h4>
+            <ul>
+                <li><strong>Overall Market (2025):</strong> Projected EUR 3.63B</li>
+                <li><strong>Betting Segment:</strong> Accounts for 60.5% of total gambling earnings</li>
+                <li><strong>Mobile Wagering:</strong> Dominates at 81% of online betting turnover</li>
+                <li><strong>Continental Context:</strong> Africa's online gambling market expected to reach USD 11.27 billion by 2032</li>
+            </ul>
+            
+            <h4>Regulatory Status & Current Framework</h4>
+            <ul>
+                <li><strong>Sports Betting:</strong> Legal and provincially regulated</li>
+                <li><strong>Online Casino/Interactive Gambling:</strong> Technically unlawful under National Gambling Act 2004</li>
+                <li><strong>Platform Mandate:</strong> Supreme Court ruling mandates Platform Separation Mandate (segregate betting and casino products)</li>
+                <li><strong>Online Operators Count:</strong> 36 operational casinos, 2,546 operational limited payout machines, 553 operational bookmaker outlets</li>
+            </ul>
+            
+            <h4>Industry Reaction & Challenges</h4>
+            <ul>
+                <li><strong>Sun International CEO:</strong> Reports Sunbet (online platform) would face additional R275 million in tax annually if proposal enacted. 70% of Sun International profits come from land-based properties, not targeted by proposal.</li>
+                <li><strong>Bookmakers Association:</strong> CEO Sean Coleman warns licensed bookmakers already pay 6.5% provincial tax + 15% VAT (18-19% effective combined rate), making 38-39% total rate destructive</li>
+                <li><strong>Illegal Market Impact:</strong> Concern that higher taxes on legal operators will push players toward illegal offshore platforms</li>
+                <li><strong>Potential Upside:</strong> Proposal signals potential legalization path for online casinos (currently banned), though at substantial cost</li>
+            </ul>
+            
+            <h3>🇳🇬 Nigeria - Constitutional Crisis & Federated Licensing (Tier 2 - CRITICAL)</h3>
+            
+            <h4>Constitutional Crisis Status (December 2, 2025)</h4>
+            <ul>
+                <li><strong>Senate Action:</strong> Nigerian Senate passed Central Gaming Bill 2025 (HB 262) on third reading December 2, 2025</li>
+                <li><strong>Legislative Defiance:</strong> Move directly contradicts Supreme Court ruling of November 22, 2024, that declared gaming state-exclusive competency</li>
+                <li><strong>Bill Objectives:</strong> Establish Central Gaming Commission with federal regulatory authority across all states, despite Court prohibition</li>
+                <li><strong>Constitutional Expert Analysis:</strong> Legal experts argue passage violates Section 287(1) of Nigerian Constitution, which makes Supreme Court judgments binding on all authorities</li>
+            </ul>
+            
+            <h4>Supreme Court Ruling Background (November 22, 2024)</h4>
+            <ul>
+                <li><strong>Case:</strong> AG Lagos State v. AG Federation (2024)</li>
+                <li><strong>Ruling:</strong> Court declared gaming and lottery are Residual Matters under Nigerian Constitution, placing gaming regulation exclusively under State Governments' jurisdiction</li>
+                <li><strong>Nullification:</strong> Court nullified National Lottery Act 2005 and issued perpetual injunctions against Federal Government interference</li>
+                <li><strong>Online Gaming Exception:</strong> Court rejected argument that online gaming requires federal jurisdiction, holding that States retain exclusive powers regardless of whether games conducted in physical outlets or digital platforms</li>
+            </ul>
+            
+            <h4>Federated Licensing Model (Alternative Path)</h4>
+            <ul>
+                <li><strong>28-State Model:</strong> Licenses allocated through 28-state licensing framework with federal coordination</li>
+                <li><strong>Regulatory Alignment:</strong> Model aligns approvals between National Lottery Regulatory Commission (NLRC) and state regulators (e.g., Lagos State Lotteries Board)</li>
+                <li><strong>AML Oversight:</strong> Federated approach reduces licensing duplication while strengthening anti-money laundering oversight</li>
+                <li><strong>Recommended Framework:</strong> Federation of State Gaming Regulators of Nigeria (FSGRN) provides cooperative federalism platform</li>
+            </ul>
+            
+            <h4>Tax Context</h4>
+            <ul>
+                <li><strong>Federal Excise Duty:</strong> 5% introduced January 2025</li>
+                <li><strong>Federal Withholding Tax:</strong> 5% on player wins now effective</li>
+                <li><strong>Tax Legality:</strong> Legality/enforcement questioned due to state-level control ruling</li>
+            </ul>
+            
+            <h4>Market Leaders & Performance</h4>
+            <ul>
+                <li><strong>BetKing:</strong> 76% YoY revenue surge to USD 106M (FY25), positioning as market leader</li>
+                <li><strong>Bet9ja:</strong> Holds approximately 6% market share</li>
+                <li><strong>SportyBet:</strong> 4th most-visited website nationally (July 2025)</li>
+                <li><strong>Market Context:</strong> High demand despite regulatory uncertainty, demonstrating market potential once clarity achieved</li>
+            </ul>
+            
+            <div class="box-warning">
+                <strong>Entry Status: DEFERRED</strong> Regulatory confidence is LOW with projected 6-12 month regulatory vacuum. Market entry should be deferred until Q2 2026, pending resolution of constitutional conflict between Senate and Supreme Court. Monitor Lagos State legal proceedings for contempt charges against National Assembly.
+            </div>
+            
+            <h3>🇰🇪 Kenya - Regulatory Transition & Biometric Requirements (Tier 2)</h3>
+            
+            <h4>Recent Regulatory Changes (2025)</h4>
+            <ul>
+                <li><strong>New Framework:</strong> Gambling Act 2025 passed with significant regulatory overhaul</li>
+                <li><strong>Authority Change:</strong> Dissolved old Betting Control and Licensing Board (BCLB), creating Gambling Regulatory Authority (GRA)</li>
+                <li><strong>Tax Overhaul:</strong> New 5% withdrawal tax replaces prior 20% tax on net earnings + 15% excise duty (simplified but still substantial burden)</li>
+                <li><strong>Real-Time Monitoring:</strong> Mandatory real-time monitoring system linked to Kenya Revenue Authority enforced</li>
+            </ul>
+            
+            <h4>Biometric Player Identification Mandate</h4>
+            <ul>
+                <li><strong>Requirement:</strong> Mandatory biometric player identification (fingerprints, facial/iris scans) for all new accounts</li>
+                <li><strong>System Deadline:</strong> September 30 (completed by most major operators)</li>
+                <li><strong>Compliance Complexity:</strong> Adds technical requirements and costs but strengthens player identity verification</li>
+            </ul>
+            
+            <h4>Local Ownership & Market Dynamics</h4>
+            <ul>
+                <li><strong>Local Ownership Requirement:</strong> 30% local ownership requirement adds complexity to foreign operator entry</li>
+                <li><strong>Player Base:</strong> Over 7 million Kenyans have registered sportsbook accounts (highest engagement in Africa)</li>
+                <li><strong>Football Betting Focus:</strong> Football betting dominates with European leagues and local competitions attracting play</li>
+                <li><strong>Consolidation Outlook:</strong> Expected consolidation from 99 operators to 15-20 core survivors in 2025-2026</li>
+            </ul>
+            
+            <h3>🇺🇬 Uganda - Rising Star with Mobile Betting Focus (Tier 2)</h3>
+            
+            <h4>Market Drivers & Demographics</h4>
+            <ul>
+                <li><strong>Population Base:</strong> 48 million embracing mobile betting via affordable smartphones and increasing internet access</li>
+                <li><strong>Mobile Betting Ecosystem:</strong> Low-cost mobile betting continues attracting both bettors and operators</li>
+                <li><strong>Preferred Sport:</strong> Football remains primary focus with European leagues and local competitions attracting play</li>
+            </ul>
+            
+            <h4>Operator Growth & Government Support</h4>
+            <ul>
+                <li><strong>Operator Growth Signal:</strong> Government doubled number of registered betting operators, signaling strong industry support</li>
+                <li><strong>Regulatory Stability:</strong> Stable regulatory environment (marked Tier 2 - Stable in ranking)</li>
+                <li><strong>Market Opportunity:</strong> Young, growing market with high mobile penetration and limited competition</li>
+            </ul>
+            
+            <h4>Regulatory Challenges</h4>
+            <ul>
+                <li><strong>Gambling Addiction Concerns:</strong> Government discussions about stricter regulations to address addiction concerns</li>
+                <li><strong>Responsible Gambling Framework:</strong> Emerging focus on deposit limits, time-out features, self-exclusion tools (AGRA guidelines)</li>
+            </ul>
+            
+            <h3>🇦🇴 Angola - New Law & First-Mover Opportunity (Tier 2)</h3>
+            
+            <h4>New Gaming Law Implementation (Law 17/24, October 2024)</h4>
+            <ul>
+                <li><strong>Framework Date:</strong> New Gaming Law (Law 17/24) enacted October 2024, replacing Law 5/16 (2016)</li>
+                <li><strong>Objective:</strong> Modernize landscape for gaming operators by establishing clear operational standards and rules</li>
+                <li><strong>Coverage Expansion:</strong> Expands regulatory coverage to include online gambling, social games, and land-based casinos</li>
+                <li><strong>Regulatory Commitment:</strong> Law promotes transparency, prevention of unlawful activities, responsible gaming, and systematic industry growth support</li>
+            </ul>
+            
+            <h4>Licensing & Market Access</h4>
+            <ul>
+                <li><strong>Licensing Model:</strong> Licenses allocated through public tender bidding (not administrative approval) ensuring level playing field</li>
+                <li><strong>Foreign Entry:</strong> International operators no longer required to form joint ventures with local businesses - can establish locally registered companies independently</li>
+                <li><strong>License Duration:</strong> Period of validity increased from 5 to 10 years for games of chance from public tender</li>
+                <li><strong>Renewal:</strong> Licenses may be renewed for same 10-year period</li>
+            </ul>
+            
+            <h4>Tax Structure Reform (Major Reduction)</h4>
+            <ul>
+                <li><strong>Casino GGR Tax:</strong> Reduced from 45% to 25% (major reduction improving operator viability)</li>
+                <li><strong>Sports Betting GGR Tax:</strong> Set to 20%</li>
+                <li><strong>Threshold Exemption:</strong> Winnings below USD 200 excluded from tax regime, improving player retention</li>
+                <li><strong>Policy Balance:</strong> Tax reform balances government revenue needs with sector viability</li>
+            </ul>
+            
+            <h4>Operational Framework</h4>
+            <ul>
+                <li><strong>Operating Regimes:</strong> Two different regimes for games of chance - exclusive regime (single operator geographic area) and special regime (multiple operators same area with minimum distance protection)</li>
+                <li><strong>Online Operations:</strong> Online gambling and betting can only be carried out under license granted to public limited company</li>
+                <li><strong>Local Requirements:</strong> Operators not subject to exclusivity regime may be licensed as private legal persons governed by Angolan law with registered office in Angola</li>
+                <li><strong>Company Structure:</strong> Licenses awarded by invitation to tender, provided applicants meet Law 17/24 requirements</li>
+            </ul>
+            
+            <h4>Compliance & Regulatory Focus</h4>
+            <ul>
+                <li><strong>AML Obligations:</strong> Enhanced anti-money laundering obligations with Financial Intelligence Unit cooperation on illegitimate funds flows</li>
+                <li><strong>Shareholder Authorization:</strong> Any natural or legal person acquiring 20%, 33%, or 50%+ shareholding in gaming operator must obtain prior ISJ authorization</li>
+                <li><strong>Additional Regulations:</strong> New draft presidential decrees and regulatory directions in progress covering licensing details, operating conditions, risk-based standards, and responsible gaming initiatives</li>
+                <li><strong>Enforcement Actions:</strong> Continued crackdown on illegal gambling with strict self-assessment compliance framework for industry participants</li>
+            </ul>
+            
+            <h4>Entry Status & Opportunity</h4>
+            <ul>
+                <li><strong>License Cost Estimate:</strong> Approximately EUR 120K per license</li>
+                <li><strong>First-Mover Status:</strong> First-Mover Advantage in public tender bidding</li>
+                <li><strong>Entry Timeline:</strong> Prepare tender submission Q1 2026; Q2-Q3 2026 submission target</li>
+                <li><strong>Regulatory Clarity:</strong> Law 17/24 provides stable framework for long-term operator planning</li>
+            </ul>
+            
+            <h3>🇬🇭 Ghana - Mature Market & Cryptocurrency Integration (Tier 2)</h3>
+            
+            <h4>Market Maturation & Integration Mandates</h4>
+            <ul>
+                <li><strong>Biometric Integration:</strong> Mandatory September 30 deadline (completed by most operators)</li>
+                <li><strong>Market Structure:</strong> Seven land-based casinos (five in Accra, rest in Kumasi and Tema). Clear regulations attract innovative operators.</li>
+                <li><strong>Mature Phase Status:</strong> Market in consolidation phase with limited greenfield opportunities</li>
+            </ul>
+            
+            <h4>Capital Requirements & Cryptocurrency Trend</h4>
+            <ul>
+                <li><strong>Capital Requirement:</strong> Estimated USD 2.0M+ for new operators</li>
+                <li><strong>Cryptocurrency Adoption:</strong> Growing trend of cryptocurrency gambling (Bitcoin, Ethereum) for deposits/withdrawals bypassing traditional banking restrictions</li>
+                <li><strong>Regulatory Position:</strong> Clear regulations on cryptocurrency use continuing to evolve</li>
+            </ul>
+            
+            <h4>Entry Recommendation</h4>
+            <ul>
+                <li><strong>Status:</strong> Avoid greenfield entry (mature, saturated, consolidation phase)</li>
+                <li><strong>Alternative Opportunity:</strong> Consider M&A or partnership with existing licensed operators if strategic fit identified</li>
+            </ul>
+        </div>
+        
+        <!-- MARKET PROJECTIONS SECTION -->
+        <div id="projections" class="content-section">
+            <h2>Market Sizing Projections & Confidence Levels</h2>
+            
             <h3>Regional Market Projections (USD Billions)</h3>
             <p><strong>Note:</strong> Totals include all 19 markets in scope (South America, Central America, Africa).</p>
+            
             <table>
                 <thead>
                     <tr>
@@ -611,113 +1069,311 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>South America</td><td>USD 8.3-9.2B</td><td>USD 9.7-11.4B</td><td>USD 11.1-13.3B</td><td>10-18%</td></tr>
-                    <tr><td>Central America</td><td>USD 2.5-3.0B</td><td>USD 2.8-3.4B</td><td>USD 3.0-3.9B</td><td>8-15%</td></tr>
-                    <tr><td>Africa</td><td>USD 2.2-2.8B</td><td>USD 2.4-3.1B</td><td>USD 2.7-3.7B</td><td>8-15%</td></tr>
-                    <tr><td><strong>TOTAL (19 Markets)</strong></td><td><strong>USD 16.5-18.85B</strong></td><td><strong>USD 18.2-21.35B</strong></td><td><strong>USD 19.6-24.1B</strong></td><td><strong>10-18%</strong></td></tr>
-                </tbody>
-            </table>
-
-            <h3>Confidence Levels & Caveats</h3>
-            <p>Assessment of data reliability for key market variables.</p>
-            <table>
-                <thead>
                     <tr>
-                        <th>Item</th>
-                        <th>Confidence</th>
-                        <th>Notes</th>
+                        <td><strong>South America</strong></td>
+                        <td>USD 8.3-9.2B</td>
+                        <td>USD 9.7-11.4B</td>
+                        <td>USD 11.1-13.3B</td>
+                        <td>10-18%</td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Brazil projections (USD 3.01B by 2030)</td><td>HIGH</td><td>Framework stable; BRL 25.2B revenue verified in H1 2025; 12.3% CAGR confirmed</td></tr>
-                    <tr><td>Peru projections (USD 850M-1.1B 2026)</td><td>HIGH</td><td>Clear framework; 59 operators authorized; stable growth trajectory</td></tr>
-                    <tr><td>Nigeria outlook</td><td>LOW</td><td>Constitutional uncertainty; 6-12 month variables; federated model emerging</td></tr>
-                    <tr><td>South Africa tax reform</td><td>MEDIUM</td><td>Proposal published; public comment deadline January 30, 2026; legislation timeline unclear</td></tr>
-                    <tr><td>Africa sizing (excl. SA tax)</td><td>MEDIUM</td><td>Infrastructure gaps present; mobile penetration increasing; 5.81% CAGR baseline</td></tr>
-                    <tr><td>2026 regional growth 11-15%</td><td>MEDIUM-HIGH</td><td>Conditional on regulatory stability; Brazil growth proven; Africa growth accelerating</td></tr>
+                    <tr>
+                        <td><strong>Central America</strong></td>
+                        <td>USD 2.5-3.0B</td>
+                        <td>USD 2.8-3.4B</td>
+                        <td>USD 3.0-3.9B</td>
+                        <td>8-15%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Africa</strong></td>
+                        <td>USD 2.2-2.8B</td>
+                        <td>USD 2.4-3.1B</td>
+                        <td>USD 2.7-3.7B</td>
+                        <td>8-15%</td>
+                    </tr>
+                    <tr style="background: #e3f2fd; font-weight: 700;">
+                        <td><strong>TOTAL (19 Markets)</strong></td>
+                        <td><strong>USD 16.5-18.85B</strong></td>
+                        <td><strong>USD 18.2-21.35B</strong></td>
+                        <td><strong>USD 19.6-24.1B</strong></td>
+                        <td><strong>10-18%</strong></td>
+                    </tr>
                 </tbody>
             </table>
-        </div>
-
-        <div id="roadmap-content" class="content-section market-analysis-section">
-            <h2>PRIORITY TIMELINE FOR ENTRY (Q4 2025 - Q4 2026)</h2>
-
-            <p>Recommended timeline for key market entry decisions, based on regulatory windows and competitive intensity.</p>
+            
+            <h3>Confidence Levels & Data Reliability Assessment</h3>
             
             <table>
                 <thead>
                     <tr>
-                        <th>Timeline</th>
-                        <th>Market</th>
-                        <th>Action</th>
-                        <th>Status</th>
-                        <th>Marketing Requirement</th>
+                        <th>Metric</th>
+                        <th>Confidence Level</th>
+                        <th>Supporting Notes</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>December 2025</td><td>Peru</td><td>File applications</td><td><span class="warning">URGENT</span></td><td>USD 800K-1.2M first year</td></tr>
-                    <tr><td>December 2025</td><td>Paraguay</td><td>Monitor tender schedule</td><td>PREPARE</td><td>USD 400-700K budget needed</td></tr>
-                    <tr><td>December 2025</td><td>Dominican Republic</td><td>Make commitment decision</td><td>DECIDE</td><td>USD 1M-1.5M first year</td></tr>
-                    <tr><td>January 2026</td><td>Peru</td><td>Licensing completion</td><td>TRACK</td><td>Influencer partnerships launch</td></tr>
-                    <tr><td>January 2026</td><td>Brazil</td><td>Infrastructure planning</td><td>INITIATE</td><td>Celebrity partnerships planning</td></tr>
-                    <tr><td>Q1 2026</td><td>Kenya</td><td>Await GRAK framework</td><td>MONITOR</td><td>Tax burden messaging prep</td></tr>
-                    <tr><td>Q1 2026</td><td>South Africa</td><td>Monitor tax reform</td><td>QUARTERLY TRACK</td><td>Sports sponsorship models</td></tr>
-                    <tr><td>Q1 2026</td><td>Angola</td><td>Prepare tender submission</td><td>PREPARE</td><td>Affiliate network launch prep</td></tr>
-                    <tr><td>Q2 2026</td><td>Brazil</td><td>Consolidation opportunities</td><td>ASSESS</td><td>M&A evaluation</td></tr>
-                    <tr><td>Q2 2026</td><td>Nigeria</td><td>Reassess constitutional status</td><td>CHECKPOINT</td><td>Re-enter if clarity emerges</td></tr>
-                    <tr><td>Q2-Q3 2026</td><td>Angola</td><td>Tender submission</td><td>SUBMIT</td><td>Launch affiliate programs</td></tr>
-                    <tr><td>Q3 2026</td><td>South Africa</td><td>Tax reform decision point</td><td>CHECKPOINT</td><td>Platform separation planning</td></tr>
+                    <tr>
+                        <td>Brazil projections (USD 3.01B by 2030)</td>
+                        <td><span class="status-badge status-tier1">HIGH</span></td>
+                        <td>Framework stable; BRL 25.2B H1 2025 revenue verified; 12.3% CAGR confirmed in official data. October 2025 18% tax increase impact still being absorbed by market.</td>
+                    </tr>
+                    <tr>
+                        <td>Peru projections (USD 850M-1.1B 2026)</td>
+                        <td><span class="status-badge status-tier1">HIGH</span></td>
+                        <td>Clear framework; 59 operators authorized (120 licenses issued); stable growth trajectory; 75% internet penetration; 59% mobile payment adoption supporting growth.</td>
+                    </tr>
+                    <tr>
+                        <td>Angola opportunity (EUR 120K license cost)</td>
+                        <td><span class="status-badge status-tier1">HIGH</span></td>
+                        <td>Law 17/24 provides clear regulatory framework; 25% casino tax reduction from 45% creates operator viability; public tender bidding ensures transparent process.</td>
+                    </tr>
+                    <tr>
+                        <td>Nigeria outlook</td>
+                        <td><span class="status-badge status-tier3">LOW</span></td>
+                        <td>Constitutional uncertainty persisting; Supreme Court vs. Senate impasse unresolved as of December 2, 2025; 6-12 month variables; federated model emerging but not yet implemented.</td>
+                    </tr>
+                    <tr>
+                        <td>South Africa tax reform</td>
+                        <td><span class="status-badge status-tier2">MEDIUM</span></td>
+                        <td>Proposal published November 25, 2025; public comment deadline January 30, 2026; legislation timeline unclear; industry reaction mixed but strong opposition evident.</td>
+                    </tr>
+                    <tr>
+                        <td>Colombia consolidation (16 platforms)</td>
+                        <td><span class="status-badge status-tier1">HIGH</span></td>
+                        <td>Coljuegos maintains updated license list; 16 fully authorized operators verified; 10,000+ illegal websites blocked in 2025 enforcement wave.</td>
+                    </tr>
+                    <tr>
+                        <td>Africa sizing (excl. SA tax)</td>
+                        <td><span class="status-badge status-tier2">MEDIUM</span></td>
+                        <td>Infrastructure gaps present; mobile penetration increasing; 5.81% CAGR baseline conservative; cryptocurrency adoption accelerating growth trajectory.</td>
+                    </tr>
+                    <tr>
+                        <td>2026 regional growth 11-15%</td>
+                        <td><span class="status-badge status-tier2">MEDIUM-HIGH</span></td>
+                        <td>Conditional on regulatory stability; Brazil growth proven with official tax data; Africa growth accelerating with Kenya consolidation and Uganda mobile expansion.</td>
+                    </tr>
                 </tbody>
             </table>
+            
+            <h3>Key Market Drivers & Growth Factors</h3>
+            
+            <div class="market-card positive">
+                <h4>Positive Growth Drivers</h4>
+                <ul>
+                    <li><strong>Regulatory Legalization:</strong> Brazil, Peru, Colombia, Angola all have established legal frameworks driving operator growth</li>
+                    <li><strong>Mobile Penetration:</strong> 75%+ internet penetration in key markets (Peru, Brazil); mobile payments now 59%+ of e-commerce</li>
+                    <li><strong>Cryptocurrency Adoption:</strong> Ghana, Uganda, Kenya showing cryptocurrency betting growth bypassing banking restrictions</li>
+                    <li><strong>Youth Demographics:</strong> African markets with 48M+ youth population (Uganda) driving long-term growth</li>
+                    <li><strong>Operator Consolidation:</strong> Reducing fragmentation and attracting institutional capital (e.g., MGM, Caesars, Betsson entering regulated markets)</li>
+                </ul>
+            </div>
+            
+            <div class="market-card critical">
+                <h4>Headwinds & Risk Factors</h4>
+                <ul>
+                    <li><strong>Tax Rate Increases:</strong> Brazil 18% GGR (Oct 2025), South Africa 20% proposed national tax, Colombia 19% VAT compressing margins</li>
+                    <li><strong>Regulatory Uncertainty:</strong> Nigeria constitutional crisis, Kenya equipment costs from biometric mandates, Uganda addiction concerns</li>
+                    <li><strong>Platform Restrictions:</strong> South Africa platform separation mandate, Peru cryptocurrency ban, Brazil credit card prohibition limiting revenue channels</li>
+                    <li><strong>Competitive Saturation:</strong> Colombia consolidating to 16-18 players, Ghana maturing with 7 casinos, Kenya consolidating from 99 to 15-20 operators</li>
+                    <li><strong>Responsible Gambling Mandates:</strong> Kenya real-time monitoring, Uganda addiction initiatives, AGRA guidelines increasing compliance costs</li>
+                </ul>
+            </div>
         </div>
         
-    </main>
-
+        <!-- ENTRY TIMELINE SECTION -->
+        <div id="timeline" class="content-section">
+            <h2>Priority Timeline for Market Entry (Q4 2025 - Q4 2026)</h2>
+            
+            <p>Recommended timeline for key market entry decisions, based on regulatory windows and competitive intensity.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2025</div>
+                    <div class="timeline-content">
+                        <h4>Peru - File Applications (URGENT)</h4>
+                        <p><strong>Action:</strong> File licensing applications with MINCETUR</p>
+                        <p><strong>Deadline:</strong> December 31, 2025</p>
+                        <p><strong>Rationale:</strong> January 2026 licensing completion critical before market consolidation accelerates</p>
+                        <p><strong>Capital Requirement:</strong> EUR 792,000 (USD 235K+) capital guarantee</p>
+                        <p><strong>Marketing Budget:</strong> USD 800K-1.2M first year for market entry and brand establishment</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2025</div>
+                    <div class="timeline-content">
+                        <h4>Dominican Republic - Make Commitment Decision</h4>
+                        <p><strong>Action:</strong> Final decision on licensing application submission</p>
+                        <p><strong>Status:</strong> Competitive window closing Q1 2026</p>
+                        <p><strong>Capital Requirement:</strong> USD 346,000 license cost + operational capital</p>
+                        <p><strong>Marketing Budget:</strong> USD 1M-1.5M first year</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2025</div>
+                    <div class="timeline-content">
+                        <h4>Paraguay - Monitor Tender Schedule</h4>
+                        <p><strong>Action:</strong> Prepare tender documentation and bid strategy</p>
+                        <p><strong>Status:</strong> Q1 2026 tender launches expected</p>
+                        <p><strong>Advantage:</strong> Greenfield opportunity with limited operator base</p>
+                        <p><strong>Capital Requirement:</strong> USD 150-300K per license</p>
+                        <p><strong>Marketing Budget:</strong> USD 400-700K needed for market entry preparation</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">January 2026</div>
+                    <div class="timeline-content">
+                        <h4>Peru - Licensing Completion & Influencer Partnerships Launch</h4>
+                        <p><strong>Action:</strong> Track licensing approvals; launch influencer partnership strategy</p>
+                        <p><strong>Marketing Strategy:</strong> Influencer partnerships essential given football betting focus</p>
+                        <p><strong>Operational Launch:</strong> Begin platform testing and local team recruitment</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">January 2026</div>
+                    <div class="timeline-content">
+                        <h4>South Africa - Tax Reform Public Comment Period Closes</h4>
+                        <p><strong>Action:</strong> Monitor industry response and government decision timeline</p>
+                        <p><strong>Deadline:</strong> January 30, 2026 public comment deadline</p>
+                        <p><strong>Expected Timeline:</strong> Tax reform decision 2-4 weeks after comment period closes</p>
+                        <p><strong>Strategic Planning:</strong> Begin platform separation architecture if tax passes</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">January 2026</div>
+                    <div class="timeline-content">
+                        <h4>Brazil - Infrastructure Planning & Consolidation Assessment</h4>
+                        <p><strong>Action:</strong> Begin infrastructure planning for late 2026 entry</p>
+                        <p><strong>Tax Adaptation:</strong> Model 18% GGR tax impact on financial projections</p>
+                        <p><strong>M&A Assessment:</strong> Evaluate acquisition opportunities among struggling provisionally-licensed operators facing margin compression</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2026</div>
+                    <div class="timeline-content">
+                        <h4>Kenya - GRAK Framework Monitoring</h4>
+                        <p><strong>Action:</strong> Monitor Gambling Regulatory Authority (GRA) finalization of detailed operating rules</p>
+                        <p><strong>Regulatory Status:</strong> Gambling Act 2025 passed; GRA now finalizing detailed framework</p>
+                        <p><strong>Local Partnership:</strong> Identify 30% local ownership partner candidates</p>
+                        <p><strong>Biometric Compliance:</strong> Ensure technical infrastructure supports mandatory biometric identification</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2026</div>
+                    <div class="timeline-content">
+                        <h4>South Africa - Tax Reform Decision Point & Platform Separation Planning</h4>
+                        <p><strong class="timeline-date">Action:</strong> Track government decision on 20% national tax proposal</p>
+                        <p><strong>Strategic Planning:</strong> If tax passes, begin mandatory platform separation architecture for betting/casino segregation</p>
+                        <p><strong>Sports Sponsorship:</strong> Develop sports sponsorship models as alternative to restricted athlete/influencer endorsements</p>
+                        <p><strong>Margin Planning:</strong> Model 26-29% effective tax rate impact on long-term operator viability</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2026</div>
+                    <div class="timeline-content">
+                        <h4>Angola - Tender Submission Preparation</h4>
+                        <p><strong>Action:</strong> Prepare comprehensive tender bid documentation</p>
+                        <p><strong>Regulatory Status:</strong> Law 17/24 framework established; ISJ accepting tender applications</p>
+                        <p><strong>Capital Preparation:</strong> EUR 120K+ licensing cost plus operational capital assembly</p>
+                        <p><strong>Compliance Setup:</strong> Begin AML program design and Financial Intelligence Unit coordination protocols</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2 2026</div>
+                    <div class="timeline-content">
+                        <h4>Brazil - Consolidation Opportunities Assessment</h4>
+                        <p><strong>Action:</strong> Evaluate M&A opportunities among struggling provisionally-licensed operators</p>
+                        <p><strong>Market Context:</strong> 18% GGR tax increase (Oct 2025) will drive consolidation of weak operators</p>
+                        <p><strong>Financial Planning:</strong> Model acquisition costs and integration timelines for 2026 close targets</p>
+                        <p><strong>Celebrity Partnerships:</strong> Begin discussions with celebrity partners compliant with new advertising restrictions</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2 2026</div>
+                    <div class="timeline-content">
+                        <h4>Nigeria - Reassess Constitutional Status Checkpoint</h4>
+                        <p><strong>Action:</strong> Evaluate resolution of constitutional conflict between Senate and Supreme Court</p>
+                        <p><strong>Checkpoint Purpose:</strong> Determine whether regulatory clarity has emerged for market entry decision</p>
+                        <p><strong>Scenario Planning:</strong> Prepare for both federated (state-by-state) and federal unified regulatory outcomes</p>
+                        <p><strong>Market Entry:</strong> If clarity emerges, re-enter market with applications to Lagos State Lotteries Board and other key states</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2-Q3 2026</div>
+                    <div class="timeline-content">
+                        <h4>Angola - Tender Submission</h4>
+                        <p><strong>Action:</strong> Submit public tender bids to ISJ for gaming license allocation</p>
+                        <p><strong>Timeline:</strong> Expected tender window Q2-Q3 2026 based on Law 17/24 schedule</p>
+                        <p><strong>Competitive Positioning:</strong> First-mover advantage opportunity among qualified bidders</p>
+                        <p><strong>Marketing Prep:</strong> Begin affiliate network launch preparation pending license approval</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q3 2026</div>
+                    <div class="timeline-content">
+                        <h4>South Africa - Tax Reform Implementation Decision Point</h4>
+                        <p><strong>Action:</strong> Final checkpoint on whether 20% national tax passes and becomes law</p>
+                        <p><strong>Regulatory Impact:</strong> If passed, becomes effective 60-90 days from approval</p>
+                        <p><strong>Platform Separation:</strong> Finalize betting/casino platform segregation architecture if required</p>
+                        <p><strong>Market Entry Strategy:</strong> Adjust market entry timeline based on final tax rate implementation</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Q4 2026</div>
+                    <div class="timeline-content">
+                        <h4>Year-End Assessment & 2027 Planning</h4>
+                        <p><strong>Action:</strong> Assess execution across all 19 markets; plan 2027 entry wave</p>
+                        <p><strong>Portfolio Review:</strong> Evaluate performance of entries completed in 2025-2026</p>
+                        <p><strong>Pipeline Development:</strong> Prepare for second-wave entries in maturing markets (Ghana, Ecuador, Argentina)</p>
+                        <p><strong>Africa Regional Expansion:</strong> Plan expanded operations across Kenya, Uganda, Angola, Ghana given 5.81% CAGR baseline and cryptocurrency adoption acceleration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Global Gambling Market Intelligence Report. Data current as of December 9, 2025. For questions or updates, contact research team.</p>
+            <p><strong>Disclaimer:</strong> This report is for informational purposes only. Market conditions, regulations, and projections are subject to rapid change. Always consult with legal and compliance experts before market entry decisions.</p>
+        </footer>
+    </div>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabLinks = document.querySelectorAll('.tab-link');
-            const contentSections = document.querySelectorAll('.content-section');
-
-            // Function to hide all content sections and remove active class from all links
-            const deactivateAllTabs = () => {
-                contentSections.forEach(section => {
-                    section.style.display = 'none';
-                });
-                tabLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-            };
-
-            // Click event listener for each tab link
-            tabLinks.forEach(link => {
-                link.addEventListener('click', (event) => {
-                    event.preventDefault();
-
-                    // 1. Deactivate all others
-                    deactivateAllTabs();
-
-                    // 2. Get the target ID from the data-target attribute
-                    const targetId = link.getAttribute('data-target');
-                    const targetElement = document.getElementById(targetId);
-
-                    // 3. Show the target content and set the link to active
-                    if (targetElement) {
-                        targetElement.style.display = 'block';
-                    }
-                    link.classList.add('active');
-                });
+        function switchTab(tabName) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
             });
-
-            // Initialize: Show the default active tab (Executive Summary)
-            const activeLink = document.querySelector('.tab-link.active');
-            if (activeLink) {
-                const initialTargetId = activeLink.getAttribute('data-target');
-                const initialTargetElement = document.getElementById(initialTargetId);
-                if (initialTargetElement) {
-                    initialTargetElement.style.display = 'block';
-                }
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected section
+            const activeSection = document.getElementById(tabName);
+            if (activeSection) {
+                activeSection.classList.add('active');
             }
-        });
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
