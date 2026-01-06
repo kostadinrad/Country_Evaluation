@@ -283,60 +283,6 @@
             border-right: none;
         }
         
-        .nav-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .nav-dropdown-toggle {
-            cursor: pointer;
-            user-select: none;
-            padding: 15px 18px !important;
-            display: block;
-        }
-        
-        .nav-dropdown-toggle:hover {
-            background: rgba(255,255,255,0.25) !important;
-        }
-        
-        .nav-dropdown-menu {
-            display: none;
-            position: absolute;
-            background: #5568d3;
-            min-width: 220px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            padding: 0;
-            margin: 0;
-            top: 100%;
-            left: 0;
-            z-index: 101;
-            border-bottom: 3px solid #764ba2;
-        }
-        
-        .nav-dropdown:hover .nav-dropdown-menu {
-            display: block;
-        }
-        
-        .nav-dropdown-menu a {
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            display: block;
-            border: none;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.95em;
-            transition: all 0.3s;
-        }
-        
-        .nav-dropdown-menu a:last-child {
-            border-bottom: none;
-        }
-        
-        .nav-dropdown-menu a:hover {
-            background: rgba(255,255,255,0.3);
-            padding-left: 25px;
-        }
-        
         footer {
             background: #333;
             color: white;
@@ -371,37 +317,9 @@
 <body>
     <div class="navigation">
         <div class="nav-links">
-            <a href="#overview">📊 Overview</a>
+            <a href="#rankings">📋 All Markets (37)</a>
             <a href="#regions">🌍 Regional Analysis</a>
-            <a href="#rankings">📈 Rankings</a>
-            
-            <div class="nav-dropdown">
-                <a href="#markets" class="nav-dropdown-toggle">🌎 Americas ▼</a>
-                <div class="nav-dropdown-menu">
-                    <a href="#markets">Tier 1 Markets</a>
-                    <a href="#markets">Tier 2 Markets</a>
-                    <a href="#markets">All Americas</a>
-                </div>
-            </div>
-            
-            <div class="nav-dropdown">
-                <a href="#markets" class="nav-dropdown-toggle">🌍 Africa ▼</a>
-                <div class="nav-dropdown-menu">
-                    <a href="#markets">Tier 1 Markets</a>
-                    <a href="#markets">Tier 2 Markets</a>
-                    <a href="#markets">All Africa</a>
-                </div>
-            </div>
-            
-            <div class="nav-dropdown">
-                <a href="#asia" class="nav-dropdown-toggle">🌏 Asia ▼</a>
-                <div class="nav-dropdown-menu">
-                    <a href="#asia">Tier 1A Markets</a>
-                    <a href="#asia">Tier 1B Markets</a>
-                    <a href="#asia">All Asia (18)</a>
-                </div>
-            </div>
-            
+            <a href="#markets">🏆 Tier 1 Details</a>
             <a href="#timeline">📅 Timeline</a>
             <a href="#confidence">🎯 Confidence</a>
         </div>
@@ -414,33 +332,395 @@
         </header>
         
         <div class="content">
-            <!-- OVERVIEW SECTION -->
-            <section class="section" id="overview">
-                <h2>📊 Market Overview</h2>
+            <!-- COMPLETE TIERED MARKET RANKINGS -->
+            <section class="section" id="rankings">
+                <h2>📋 Global Market Classification - All 37 Markets</h2>
                 
                 <div class="metric-box">
-                    <div class="metric-label">Total Market Value (2026)</div>
-                    <div class="metric-value">USD 18.2 - 21.35B</div>
+                    <div class="metric-label">Total Global Market Value (2026)</div>
+                    <div class="metric-value">USD 30.2B - 34.85B</div>
                 </div>
                 
                 <div class="metric-box">
-                    <div class="metric-label">Projected Growth Rate</div>
-                    <div class="metric-value">10-18% CAGR</div>
+                    <div class="metric-label">Addressable Legal Markets 2026</div>
+                    <div class="metric-value">USD 9.2B - 10.6B</div>
                 </div>
                 
-                <h3>Executive Summary</h3>
-                <p>The global gambling market across South America, Central America, and Africa demonstrates exceptional growth potential. Analysis of 19 key markets reveals:</p>
+                <h3>🌎 AMERICAS - 13 Markets (USD 18.2B - 21.35B)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Tier</th>
+                            <th>Score</th>
+                            <th>Market Size 2026</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tier-1">
+                            <td>1</td>
+                            <td><strong>Panama</strong></td>
+                            <td>TIER 1</td>
+                            <td>7.00</td>
+                            <td>USD 400M-600M</td>
+                            <td>Stable B2B Hub</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>2</td>
+                            <td><strong>Costa Rica</strong></td>
+                            <td>TIER 1</td>
+                            <td>6.75</td>
+                            <td>USD 300M-500M</td>
+                            <td>Established B2B Hub</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>3</td>
+                            <td><strong>Paraguay</strong></td>
+                            <td>TIER 1</td>
+                            <td>6.75</td>
+                            <td>USD 200M-350M</td>
+                            <td>NEW LAW - Growth Phase ↗</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>4</td>
+                            <td><strong>Dominican Republic</strong></td>
+                            <td>TIER 1</td>
+                            <td>6.50</td>
+                            <td>USD 600M-900M</td>
+                            <td>Closing Window (Q1 2026)</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>5</td>
+                            <td><strong>Peru</strong></td>
+                            <td>TIER 1</td>
+                            <td>6.50</td>
+                            <td>USD 850M-1.1B</td>
+                            <td>URGENT ENTRY (Jan 2026)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>6</td>
+                            <td><strong>Brazil</strong></td>
+                            <td>TIER 2</td>
+                            <td>6.00</td>
+                            <td>USD 3.0B+</td>
+                            <td>Consolidation (Tax 18%)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>7</td>
+                            <td><strong>Colombia</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.75</td>
+                            <td>USD 650M-800M</td>
+                            <td>Maturing (16 operators)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>8</td>
+                            <td><strong>Ecuador</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.75</td>
+                            <td>USD 250M-350M</td>
+                            <td>Tax Formalization</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>9</td>
+                            <td><strong>Argentina</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.25</td>
+                            <td>USD 400M-600M</td>
+                            <td>Federal Law Pending</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>10</td>
+                            <td><strong>Mexico</strong></td>
+                            <td>TIER 3</td>
+                            <td>4.50</td>
+                            <td>USD 2.0B+ (offshore)</td>
+                            <td>Offshore Dominant</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>11</td>
+                            <td><strong>Bolivia</strong></td>
+                            <td>TIER 3</td>
+                            <td>4.50</td>
+                            <td>USD 150M-250M</td>
+                            <td>Grey Market</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>12</td>
+                            <td><strong>Morocco</strong></td>
+                            <td>TIER 3</td>
+                            <td>4.25</td>
+                            <td>USD 100M-200M</td>
+                            <td>Tax-Only Strategy</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>13</td>
+                            <td><strong>Egypt</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.25</td>
+                            <td>USD 50M+ (offshore)</td>
+                            <td>PROHIBITED</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <div class="key-data">
-                    <strong>✓ Market Maturity:</strong> Varying from emerging (Angola, Ecuador) to maturing (Brazil, Colombia, Peru)<br>
-                    <strong>✓ Regulatory Clarity:</strong> Mixed but improving, with clear frameworks in Tier 1 markets<br>
-                    <strong>✓ Tax Environments:</strong> Ranging from 12% (Brazil baseline) to 45% (Peru legacy rates)<br>
-                    <strong>✓ Technology Adoption:</strong> High mobile penetration (75%+ internet in most markets)<br>
-                    <strong>✓ Competitive Intensity:</strong> Consolidating in mature markets, open in emerging markets
-                </div>
+                <h3>🌍 AFRICA - 10 Markets (USD 2.4B - 3.1B)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Tier</th>
+                            <th>Score</th>
+                            <th>Market Size 2026</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tier-2">
+                            <td>1</td>
+                            <td><strong>South Africa</strong></td>
+                            <td>TIER 2</td>
+                            <td>6.25</td>
+                            <td>USD 800M-1.0B</td>
+                            <td>TAX REFORM PENDING (Jan 30)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>2</td>
+                            <td><strong>Kenya</strong></td>
+                            <td>TIER 2</td>
+                            <td>6.00</td>
+                            <td>USD 400M-600M</td>
+                            <td>Biometric Mandate</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>3</td>
+                            <td><strong>Angola</strong></td>
+                            <td>TIER 2</td>
+                            <td>6.00</td>
+                            <td>USD 300M-450M</td>
+                            <td>Greenfield (Tender Q2-Q3)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>4</td>
+                            <td><strong>Uganda</strong></td>
+                            <td>TIER 2</td>
+                            <td>6.00</td>
+                            <td>USD 150M-250M</td>
+                            <td>Stable Emerging</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>5</td>
+                            <td><strong>Nigeria</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.50</td>
+                            <td>USD 1.2B-1.5B</td>
+                            <td>UNCERTAINTY RISING (Constitutional)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>6</td>
+                            <td><strong>Ghana</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.75</td>
+                            <td>USD 150M-250M</td>
+                            <td>Biometric Integration</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>7</td>
+                            <td><strong>Cameroon</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.50</td>
+                            <td>USD 75M-150M</td>
+                            <td>Emerging/Limited Regulation</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>8</td>
+                            <td><strong>Zimbabwe</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.25</td>
+                            <td>USD 50M-100M</td>
+                            <td>Regulatory Uncertainty</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>9</td>
+                            <td><strong>Tanzania</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.00</td>
+                            <td>USD 50M-75M</td>
+                            <td>Limited Framework</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>10</td>
+                            <td><strong>Senegal</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.00</td>
+                            <td>USD 50M-75M</td>
+                            <td>Monitoring Only</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <h3>Report Date: January 5, 2026</h3>
-                <p>This analysis reflects market conditions as of January 5, 2026, incorporating regulatory changes through December 2025 and projections through 2027.</p>
+                <h3>🌏 ASIA - 18 Markets (USD 11.9B - 13.5B)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Tier</th>
+                            <th>Score</th>
+                            <th>Market Size 2026</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tier-1">
+                            <td>1</td>
+                            <td><strong>Philippines</strong></td>
+                            <td>TIER 1A</td>
+                            <td>8.50</td>
+                            <td>USD 1.8B-2.2B</td>
+                            <td>Leading Regulated Market</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>2</td>
+                            <td><strong>Singapore</strong></td>
+                            <td>TIER 1A</td>
+                            <td>8.00</td>
+                            <td>USD 600M</td>
+                            <td>Premium B2B Focus</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>3</td>
+                            <td><strong>Cambodia</strong></td>
+                            <td>TIER 1A</td>
+                            <td>7.80</td>
+                            <td>USD 800M-1.0B</td>
+                            <td>Emerging Hub (34 casinos)</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>4</td>
+                            <td><strong>Sri Lanka</strong></td>
+                            <td>TIER 1A</td>
+                            <td>6.80</td>
+                            <td>USD 200M-300M</td>
+                            <td>GRA Deadline June 2026</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>5</td>
+                            <td><strong>Vietnam</strong></td>
+                            <td>TIER 1B</td>
+                            <td>7.20</td>
+                            <td>USD 900M-1.1B</td>
+                            <td>Sports Betting Pilot</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>6</td>
+                            <td><strong>Laos</strong></td>
+                            <td>TIER 1B</td>
+                            <td>7.00</td>
+                            <td>USD 250M-350M</td>
+                            <td>Emerging Regulated</td>
+                        </tr>
+                        <tr class="tier-1">
+                            <td>7</td>
+                            <td><strong>Malaysia</strong></td>
+                            <td>TIER 1B</td>
+                            <td>6.50</td>
+                            <td>USD 650M-800M</td>
+                            <td>Selective Licensing</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>8</td>
+                            <td><strong>Thailand</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.50</td>
+                            <td>USD 2.0B-2.5B (offshore)</td>
+                            <td>Bill Withdrawn (July 2025)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>9</td>
+                            <td><strong>Hong Kong</strong></td>
+                            <td>TIER 2</td>
+                            <td>5.00</td>
+                            <td>USD 200M-250M</td>
+                            <td>Restricted Limited</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>10</td>
+                            <td><strong>Japan</strong></td>
+                            <td>TIER 2</td>
+                            <td>4.80</td>
+                            <td>USD 6.2B-7.0B (offshore)</td>
+                            <td>Illegal Online (B2B only)</td>
+                        </tr>
+                        <tr class="tier-2">
+                            <td>11</td>
+                            <td><strong>South Korea</strong></td>
+                            <td>TIER 2</td>
+                            <td>4.20</td>
+                            <td>USD 850M-950M (offshore)</td>
+                            <td>Restricted (B2B only)</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>12</td>
+                            <td><strong>India</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.00</td>
+                            <td>USD 300M+ (offshore)</td>
+                            <td>Prohibited (Court challenge 2026-27)</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>13</td>
+                            <td><strong>Indonesia</strong></td>
+                            <td>TIER 3</td>
+                            <td>2.50</td>
+                            <td>USD 500M+ (offshore)</td>
+                            <td>Prohibited (Islamic Law)</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>14</td>
+                            <td><strong>Taiwan</strong></td>
+                            <td>TIER 3</td>
+                            <td>3.50</td>
+                            <td>USD 150M+ (offshore)</td>
+                            <td>Prohibited</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>15</td>
+                            <td><strong>Myanmar</strong></td>
+                            <td>TIER 3</td>
+                            <td>2.80</td>
+                            <td>USD 100M+</td>
+                            <td>Political Instability</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>16</td>
+                            <td><strong>Brunei</strong></td>
+                            <td>TIER 3</td>
+                            <td>1.50</td>
+                            <td>USD 30M</td>
+                            <td>Prohibited (Islamic Law)</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>17</td>
+                            <td><strong>Bangladesh</strong></td>
+                            <td>TIER 3</td>
+                            <td>2.00</td>
+                            <td>USD 50M</td>
+                            <td>Prohibited</td>
+                        </tr>
+                        <tr class="tier-3">
+                            <td>18</td>
+                            <td><strong>Pakistan</strong></td>
+                            <td>TIER 3</td>
+                            <td>1.50</td>
+                            <td>USD 40M</td>
+                            <td>Prohibited (Islamic Law)</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             
             <!-- REGIONAL ANALYSIS -->
