@@ -247,7 +247,7 @@
         }
         
         .navigation {
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 0;
             position: sticky;
             top: 0;
@@ -255,32 +255,158 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
+        .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
         }
         
-        .nav-links a {
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            min-width: 200px;
+        }
+        
+        .nav-title {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        
+        .nav-section {
+            position: relative;
+        }
+        
+        .nav-toggle,
+        .nav-link {
             color: white;
             text-decoration: none;
-            padding: 15px 18px;
+            padding: 15px 16px;
             border-radius: 0;
-            transition: background 0.3s;
+            transition: all 0.3s;
             font-weight: 500;
-            border-right: 1px solid rgba(255,255,255,0.1);
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 0.95em;
             display: inline-block;
         }
         
-        .nav-links a:hover {
+        .nav-toggle:hover,
+        .nav-link:hover {
             background: rgba(255,255,255,0.25);
+            outline: none;
         }
         
-        .nav-links a:last-child {
-            border-right: none;
+        .nav-toggle:active {
+            background: rgba(255,255,255,0.35);
+        }
+        
+        .nav-submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #764ba2;
+            min-width: 180px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-submenu.active {
+            display: flex;
+        }
+        
+        .nav-submenu a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+            display: block;
+            font-size: 0.9em;
+        }
+        
+        .nav-submenu a:hover {
+            background: rgba(255,255,255,0.2);
+            border-left-color: #ffdd57;
+            padding-left: 20px;
+        }
+        
+        .nav-submenu a:first-child {
+            border-radius: 0;
+        }
+        
+        .nav-submenu a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 10px 15px;
+            }
+            
+            .nav-brand {
+                width: 100%;
+                min-width: unset;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                padding: 10px 0 15px 0;
+            }
+            
+            .nav-menu {
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+                justify-content: flex-start;
+                margin-top: 10px;
+            }
+            
+            .nav-toggle,
+            .nav-link {
+                width: 100%;
+                text-align: left;
+                padding: 12px 16px;
+            }
+            
+            .nav-submenu {
+                position: static;
+                box-shadow: none;
+                background: rgba(0,0,0,0.1);
+                border-radius: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+            }
+            
+            .nav-submenu.active {
+                max-height: 500px;
+            }
+            
+            .nav-submenu a {
+                padding-left: 32px;
+                font-size: 0.85em;
+            }
+            
+            .nav-submenu a:hover {
+                padding-left: 36px;
+            }
         }
         
         footer {
@@ -294,6 +420,10 @@
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8em;
+            }
+            
+            header {
+                padding: 30px 15px;
             }
             
             .content {
@@ -316,12 +446,45 @@
 </head>
 <body>
     <div class="navigation">
-        <div class="nav-links">
-            <a href="#rankings">📋 All Markets (37)</a>
-            <a href="#regions">🌍 Regional Analysis</a>
-            <a href="#markets">🏆 Tier 1 Details</a>
-            <a href="#timeline">📅 Timeline</a>
-            <a href="#confidence">🎯 Confidence</a>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-title">🎮 Gambling Markets 2026</span>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-section">
+                    <button class="nav-toggle" onclick="toggleSubmenu(this)">📋 Market Rankings</button>
+                    <div class="nav-submenu">
+                        <a href="#rankings">All 37 Markets</a>
+                        <a href="#rankings">Americas (13)</a>
+                        <a href="#rankings">Africa (10)</a>
+                        <a href="#rankings">Asia (18)</a>
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <button class="nav-toggle" onclick="toggleSubmenu(this)">🏆 Top Opportunities</button>
+                    <div class="nav-submenu">
+                        <a href="#markets">Tier 1 Markets</a>
+                        <a href="#regions">Tier 2 Markets</a>
+                        <a href="#markets">Peru (URGENT)</a>
+                        <a href="#markets">Brazil</a>
+                        <a href="#markets">Angola</a>
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <button class="nav-toggle" onclick="toggleSubmenu(this)">🌍 Regional Focus</button>
+                    <div class="nav-submenu">
+                        <a href="#regions">Americas Overview</a>
+                        <a href="#regions">Africa Overview</a>
+                        <a href="#asia">Asia Analysis (18 Markets)</a>
+                    </div>
+                </div>
+                <div class="nav-section">
+                    <a href="#timeline" class="nav-link">📅 Action Timeline</a>
+                </div>
+                <div class="nav-section">
+                    <a href="#confidence" class="nav-link">🎯 Confidence Metrics</a>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -1978,8 +2141,34 @@
     </div>
     
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-links a').forEach(link => {
+        // Toggle submenu functionality
+        function toggleSubmenu(button) {
+            const submenu = button.nextElementSibling;
+            const isActive = submenu.classList.contains('active');
+            
+            // Close all other submenus
+            document.querySelectorAll('.nav-submenu.active').forEach(menu => {
+                if (menu !== submenu) {
+                    menu.classList.remove('active');
+                }
+            });
+            
+            // Toggle current submenu
+            submenu.classList.toggle('active');
+        }
+        
+        // Close submenu when link is clicked
+        document.querySelectorAll('.nav-submenu a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const submenu = link.closest('.nav-submenu');
+                if (submenu) {
+                    submenu.classList.remove('active');
+                }
+            });
+        });
+        
+        // Smooth scrolling for all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
@@ -1988,6 +2177,15 @@
                     targetSection.scrollIntoView({ behavior: 'smooth' });
                 }
             });
+        });
+        
+        // Close submenus when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-section')) {
+                document.querySelectorAll('.nav-submenu.active').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            }
         });
         
         // Add hover effects to table rows
