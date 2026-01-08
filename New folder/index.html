@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Gambling Markets 2026 - Master Index</title>
+    <style>
+        :root { --primary: #4a69bd; --secondary: #1e3799; --bg: #f1f2f6; --text: #2f3542; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        
+        /* Navigation */
+        .global-nav { background: #333; padding: 15px; border-radius: 5px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .nav-link { color: white; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-weight: 600; transition: background 0.3s; }
+        .nav-link:hover { background: rgba(255,255,255,0.2); }
+        .nav-link.active { background: var(--primary); }
+
+        h1 { text-align: center; color: var(--secondary); border-bottom: 3px solid var(--primary); padding-bottom: 15px; margin-bottom: 20px; }
+        h2 { color: var(--secondary); margin-top: 30px; border-left: 5px solid var(--primary); padding-left: 15px; }
+        
+        /* Tables */
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em; min-width: 800px; }
+        th { background-color: var(--primary); color: white; padding: 12px; text-align: left; }
+        td { padding: 10px 12px; border-bottom: 1px solid #dfe4ea; }
+        tr:nth-child(even) { background-color: #f1f2f6; }
+        tr:hover { background-color: #eccc68; color: #000; }
+
+        /* Status Badges */
+        .badge { padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.85em; display: inline-block; white-space: nowrap; }
+        .tier1 { background: #d4edda; color: #155724; }
+        .tier1a { background: #c3e6cb; color: #155724; border: 1px solid #155724; }
+        .tier2 { background: #fff3cd; color: #856404; }
+        .tier3 { background: #f8d7da; color: #721c24; }
+        
+        /* Dashboard Widgets */
+        .highlight-box { background: #f8f9fa; border: 1px solid #dee2e6; border-left: 5px solid var(--primary); padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .key-metric { display: inline-block; background: var(--primary); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85em; margin: 5px 5px 5px 0; font-weight: bold; }
+
+        /* Search */
+        .filters { background: #e9ecef; padding: 20px; border-radius: 8px; display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-end; }
+        .filter-group { display: flex; flex-direction: column; gap: 5px; }
+        .filter-group label { font-weight: bold; font-size: 0.9em; }
+        .filter-group input, .filter-group select { padding: 8px; border: 1px solid #ced4da; border-radius: 4px; min-width: 150px; }
+        button { padding: 9px 20px; background: var(--secondary); color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: var(--primary); }
+
+        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; text-align: center; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <nav class="global-nav">
+        <a href="index.html" class="nav-link active">📊 Master Index</a>
+        <a href="americas.html" class="nav-link">🌎 Americas</a>
+        <a href="europe.html" class="nav-link">🇪🇺 Europe</a>
+        <a href="asia.html" class="nav-link">🌏 Asia</a>
+        <a href="africa.html" class="nav-link">🌍 Africa</a>
+    </nav>
+
+    <h1>GLOBAL GAMBLING MARKETS 2026</h1>
+    <p style="text-align: center; font-size: 1.1em; color: #555;">
+        <strong>Comprehensive Analysis: 75+ Markets | USD 55-65B Total Opportunity</strong>
+    </p>
+
+    <div class="highlight-box">
+        <h3>Global Executive Summary</h3>
+        <p>
+            <span class="key-metric">TOTAL: USD 55-65B</span>
+            <span class="key-metric">CAGR: 10-15%</span>
+            <span class="key-metric">MARKETS: 75+</span>
+        </p>
+        <p style="margin-top: 10px;">
+            Global gambling markets are growing at 10-15% CAGR. <strong>Africa</strong> leads in growth rate (15-25%), <strong>Americas</strong> offers the fastest entry times (45-60 days), while <strong>Europe</strong> remains the volume leader despite regulatory tightening (Italy Tender, Dutch Renewals).
+        </p>
+    </div>
+
+    <h2 id="index">📊 Market Database (Searchable)</h2>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label>Filter by Region:</label>
+            <select id="regionFilter" onchange="filterTable()">
+                <option value="">All Regions</option>
+                <option value="Americas">Americas</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Filter by Tier:</label>
+            <select id="tierFilter" onchange="filterTable()">
+                <option value="">All Tiers</option>
+                <option value="TIER 1">TIER 1 (Top Priority)</option>
+                <option value="TIER 2">TIER 2 (Secondary)</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Search Country:</label>
+            <input type="text" id="searchInput" placeholder="e.g., Brazil..." onkeyup="filterTable()" />
+        </div>
+        <button onclick="resetFilters()">Reset Filters</button>
+    </div>
+
+    <div class="table-wrapper">
+        <table id="marketTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Country</th>
+                    <th>Region</th>
+                    <th>Tier</th>
+                    <th>Market Size</th>
+                    <th>Tax Rate</th>
+                    <th>Entry Difficulty</th>
+                    <th>Proc. Time</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>🇧🇷 <strong>Brazil</strong></td>
+                    <td>Americas</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$3.0-3.5B</td>
+                    <td>18%</td>
+                    <td>High</td>
+                    <td>60 days</td>
+                    <td>🔴 URGENT</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>🇬🇧 <strong>UK</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$3.5-4.0B</td>
+                    <td>15%</td>
+                    <td>High</td>
+                    <td>180 days</td>
+                    <td>🟢 PRIORITY</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>🇮🇹 <strong>Italy</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$1.8-2.2B</td>
+                    <td>25%</td>
+                    <td>High</td>
+                    <td>Tender</td>
+                    <td>🟡 TENDER</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>🇮🇪 <strong>Ireland</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$600-800M</td>
+                    <td>0%</td>
+                    <td>Low</td>
+                    <td>45 days</td>
+                    <td>🟢 Q1 2026</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>🇪🇸 <strong>Spain</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$1.2-1.5B</td>
+                    <td>20-25%</td>
+                    <td>High</td>
+                    <td>60 days</td>
+                    <td>🟢 Q1-Q3</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>🇸🇪 <strong>Sweden</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$1.5-1.8B</td>
+                    <td>18%</td>
+                    <td>High</td>
+                    <td>90 days</td>
+                    <td>🟢 Q1-Q3</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>🇵🇭 <strong>Philippines</strong></td>
+                    <td>Asia</td>
+                    <td><span class="badge tier1a">TIER 1A</span></td>
+                    <td>$1.8-2.2B</td>
+                    <td>30%</td>
+                    <td>Moderate</td>
+                    <td>75 days</td>
+                    <td>🟡 WATCH</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>🇵🇹 <strong>Portugal</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$300-400M</td>
+                    <td>8%</td>
+                    <td>Moderate</td>
+                    <td>45 days</td>
+                    <td>🟢 Q2-Q3</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>🇲🇹 <strong>Malta</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$800M-1B</td>
+                    <td>5%</td>
+                    <td>Moderate</td>
+                    <td>60 days</td>
+                    <td>🔴 START NOW</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>🇰🇪 <strong>Kenya</strong></td>
+                    <td>Africa</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$400-600M</td>
+                    <td>7.5%</td>
+                    <td>Moderate</td>
+                    <td>75 days</td>
+                    <td>🟡 GROWTH</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>🇨🇴 <strong>Colombia</strong></td>
+                    <td>Americas</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$600-900M</td>
+                    <td>8%</td>
+                    <td>Moderate</td>
+                    <td>60 days</td>
+                    <td>🟢 Q2-Q3</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>🇲🇽 <strong>Mexico</strong></td>
+                    <td>Americas</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$900M-1.2B</td>
+                    <td>10-15%</td>
+                    <td>Mod-High</td>
+                    <td>90 days</td>
+                    <td>🟡 Q3-Q4</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>🇵🇪 <strong>Peru</strong></td>
+                    <td>Americas</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$300-500M</td>
+                    <td>12%</td>
+                    <td>Moderate</td>
+                    <td>60 days</td>
+                    <td>🟢 Q2-Q3</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>🇬🇷 <strong>Greece</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$400-600M</td>
+                    <td>20%</td>
+                    <td>Mod-High</td>
+                    <td>75 days</td>
+                    <td>🟢 Q2-Q4</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>🇩🇰 <strong>Denmark</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$500-700M</td>
+                    <td>20%</td>
+                    <td>Moderate</td>
+                    <td>60 days</td>
+                    <td>🟢 Q2-Q3</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>🇺🇬 <strong>Uganda</strong></td>
+                    <td>Africa</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$150-250M</td>
+                    <td>10%</td>
+                    <td>Low</td>
+                    <td>45 days</td>
+                    <td>🟡 20%+ CAGR</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>🇳🇬 <strong>Nigeria</strong></td>
+                    <td>Africa</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$1.2-1.5B</td>
+                    <td>10%</td>
+                    <td>Mod-High</td>
+                    <td>90 days</td>
+                    <td>🟡 RISKY</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>🇱🇰 <strong>Sri Lanka</strong></td>
+                    <td>Asia</td>
+                    <td><span class="badge tier1a">TIER 1A</span></td>
+                    <td>$200-300M</td>
+                    <td>28%</td>
+                    <td>Moderate</td>
+                    <td>60 days</td>
+                    <td>🟡 JUNE 30</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>🇩🇴 <strong>Dom. Rep.</strong></td>
+                    <td>Americas</td>
+                    <td><span class="badge tier1">TIER 1</span></td>
+                    <td>$600-900M</td>
+                    <td>12-15%</td>
+                    <td>Low</td>
+                    <td>45 days</td>
+                    <td>🟢 FASTEST</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>🇳🇱 <strong>Netherlands</strong></td>
+                    <td>Europe</td>
+                    <td><span class="badge tier2">TIER 2</span></td>
+                    <td>$600-800M</td>
+                    <td>30.6%</td>
+                    <td>High</td>
+                    <td>120 days</td>
+                    <td>⏸️ Q4+ 2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Global Market Intelligence | Confidential Internal Report</p>
+    </div>
+
+</div>
+
+<script>
+function filterTable() {
+    const regionFilter = document.getElementById('regionFilter').value.toUpperCase();
+    const tierFilter = document.getElementById('tierFilter').value.toUpperCase();
+    const searchInput = document.getElementById('searchInput').value.toUpperCase();
+    const table = document.getElementById('marketTable');
+    const rows = table.getElementsByTagName('tr');
+    
+    // Start loop from 1 to skip header
+    for (let i = 1; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName('td');
+        if (cells.length > 0) {
+            const country = cells[1].textContent.toUpperCase();
+            const region = cells[2].textContent.toUpperCase();
+            const tier = cells[3].textContent.toUpperCase();
+            
+            let showRow = true;
+            
+            if (regionFilter && region.indexOf(regionFilter) === -1) showRow = false;
+            if (tierFilter && tier.indexOf(tierFilter) === -1) showRow = false;
+            if (searchInput && country.indexOf(searchInput) === -1) showRow = false;
+            
+            rows[i].style.display = showRow ? '' : 'none';
+        }
+    }
+}
+
+function resetFilters() {
+    document.getElementById('regionFilter').value = '';
+    document.getElementById('tierFilter').value = '';
+    document.getElementById('searchInput').value = '';
+    filterTable();
+}
+</script>
+</body>
+</html>
